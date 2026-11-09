@@ -1,0 +1,136 @@
+model,base_model,task_id,type,n,failed_default,failed_extended,recovered,newly_failed,argmax_changed_on_common,n_common,extended
+julia-1__ext,julia-1,commonsensemoralja-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jamc-qa-choice,choice,300,1,0,1,0,0,299,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,janli-choice,choice,285,0,0,0,0,0,285,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jcommonsenseqa-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jculture-mcq-noul,noul,283,0,0,0,0,0,283,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jnli-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,kuci-choice,choice,300,1,0,1,0,0,299,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,mintaka-ja-boolean-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,mmlu-prox-ja-choice,choice,300,16,0,16,0,0,284,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,mmmlu-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jsick-sts-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jsts-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-knowledge-hard-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-knowledge-hard-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-knowledge-hard-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-math-formal-hard-choice,choice,300,25,0,25,0,0,275,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-math-formal-hard-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-math-formal-hard-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jmteb-retrieval,choice,300,300,0,300,0,0,0,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-diverse-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,generalization-japanese-diverse-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jcola-noul,noul,299,0,0,0,0,0,299,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jamp-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jsem-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,gpqa-ja-main-choice,choice,300,26,0,26,0,0,274,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,jmmlu-japan-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+julia-1__ext,julia-1,sobaco-culture-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）
+laya-multilingual__ext,laya-multilingual,commonsensemoralja-noul,noul,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jamc-qa-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,janli-choice,choice,285,0,0,0,0,0,285,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jcommonsenseqa-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jculture-mcq-noul,noul,283,0,0,0,0,0,283,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jnli-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,kuci-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,mintaka-ja-boolean-noul,noul,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,mmlu-prox-ja-choice,choice,300,186,0,186,0,0,114,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,mmmlu-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jsick-sts-score,score,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jsts-score,score,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-knowledge-hard-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-knowledge-hard-noul,noul,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-knowledge-hard-score,score,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-math-formal-hard-choice,choice,300,5,0,5,0,0,295,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-math-formal-hard-noul,noul,300,3,0,3,0,0,297,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-math-formal-hard-score,score,300,68,0,68,0,0,232,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jmteb-retrieval,choice,300,299,35,264,0,0,1,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-diverse-noul,noul,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,generalization-japanese-diverse-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jcola-noul,noul,299,0,0,0,0,0,299,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jamp-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jsem-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,gpqa-ja-main-choice,choice,300,18,0,18,0,0,282,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,jmmlu-japan-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+laya-multilingual__ext,laya-multilingual,sobaco-culture-choice,choice,300,0,0,0,0,0,300,--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）
+saihai-v1-310m__ext,saihai-v1-310m,commonsensemoralja-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jamc-qa-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,janli-choice,choice,285,0,0,0,0,0,285,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jcommonsenseqa-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jculture-mcq-noul,noul,283,0,0,0,0,0,283,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jnli-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,kuci-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,mintaka-ja-boolean-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,mmlu-prox-ja-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,mmmlu-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jsick-sts-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jsts-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-knowledge-hard-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-knowledge-hard-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-knowledge-hard-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-math-formal-hard-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-math-formal-hard-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-math-formal-hard-score,score,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jmteb-retrieval,choice,300,2,0,2,0,0,298,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-diverse-noul,noul,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,generalization-japanese-diverse-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jcola-noul,noul,299,0,0,0,0,0,299,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jamp-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jsem-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,gpqa-ja-main-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,jmmlu-japan-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+saihai-v1-310m__ext,saihai-v1-310m,sobaco-culture-choice,choice,300,0,0,0,0,0,300,公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）
+sokudan-ja-310m__ext,sokudan-ja-310m,commonsensemoralja-noul,noul,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jamc-qa-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,janli-choice,choice,285,0,0,0,0,0,285,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jcommonsenseqa-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jculture-mcq-noul,noul,283,0,0,0,0,0,283,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jnli-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,kuci-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,mintaka-ja-boolean-noul,noul,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,mmlu-prox-ja-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,mmmlu-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jsick-sts-score,score,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jsts-score,score,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-knowledge-hard-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-knowledge-hard-noul,noul,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-knowledge-hard-score,score,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-math-formal-hard-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-math-formal-hard-noul,noul,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-math-formal-hard-score,score,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jmteb-retrieval,choice,300,89,0,89,0,1,211,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-diverse-noul,noul,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,generalization-japanese-diverse-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jcola-noul,noul,299,0,0,0,0,0,299,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jamp-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jsem-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,gpqa-ja-main-choice,choice,300,1,0,1,0,0,299,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,jmmlu-japan-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+sokudan-ja-310m__ext,sokudan-ja-310m,sobaco-culture-choice,choice,300,0,0,0,0,0,300,joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）
+strands-decider-2b__ext,strands-decider-2b,commonsensemoralja-noul,noul,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jamc-qa-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,janli-choice,choice,285,0,0,0,0,0,285,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jcommonsenseqa-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jculture-mcq-noul,noul,283,0,0,0,0,0,283,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jnli-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,kuci-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,mintaka-ja-boolean-noul,noul,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,mmlu-prox-ja-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,mmmlu-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jsick-sts-score,score,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jsts-score,score,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-knowledge-hard-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-knowledge-hard-noul,noul,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-knowledge-hard-score,score,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-math-formal-hard-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-math-formal-hard-noul,noul,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-math-formal-hard-score,score,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jmteb-retrieval,choice,300,37,0,37,0,0,263,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-diverse-noul,noul,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,generalization-japanese-diverse-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jcola-noul,noul,299,0,0,0,0,0,299,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jamp-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jsem-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,gpqa-ja-main-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,jmmlu-japan-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）
+strands-decider-2b__ext,strands-decider-2b,sobaco-culture-choice,choice,300,0,0,0,0,0,300,max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）

@@ -1,0 +1,365 @@
+{
+ "run_id": "clef-flash-full-20261107T132816",
+ "benchmarks": {
+  "commonsensemoralja-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.08450891985558
+  },
+  "jamc-qa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.38350996002555
+  },
+  "janli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 285,
+    "expected": 285,
+    "succeeded": 285,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 27.649133865023032
+  },
+  "jcommonsenseqa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.34145387308672
+  },
+  "jculture-mcq-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 283,
+    "expected": 283,
+    "succeeded": 283,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 30.138928196858615
+  },
+  "jnli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 30.740870689041913
+  },
+  "kuci-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 30.47654247097671
+  },
+  "mintaka-ja-boolean-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 27.811109899077564
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 38.5220078129787
+  },
+  "mmmlu-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 31.62739796913229
+  },
+  "jsick-sts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 32.557637601858005
+  },
+  "jsts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 37.0082015148364
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 31.20533309993334
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.735208517871797
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 30.412103638984263
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 33.59247143100947
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 33.24244961794466
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 37.721390922088176
+  },
+  "jmteb-retrieval": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 73.72845305595547
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 27.6994607381057
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.989393055904657
+  },
+  "jcola-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 299,
+    "expected": 299,
+    "succeeded": 299,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.98758397414349
+  },
+  "jamp-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.455972218886018
+  },
+  "jsem-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 31.44518772000447
+  },
+  "gpqa-ja-main-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 33.665412744972855
+  },
+  "jmmlu-japan-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.98422859609127
+  },
+  "sobaco-culture-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 41.42842725710943
+  }
+ },
+ "model": {
+  "training_exposure": null,
+  "id": "Cloudflare/clef-flash",
+  "adapter": "clef",
+  "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+  "settings": {
+   "device": "cuda:0",
+   "cuda_visible_devices": "0",
+   "source_python_sha256": "1b7b50dc08d5e8d8bf6989cc7cc1eb8811efb22892572ec5f530b37356798a3a",
+   "renderer": "native-anonymous-ids-numeric-score-v1",
+   "questions_per_call": "all-case-questions",
+   "versions": {
+    "torch": "2.10.0+cu130",
+    "transformers": "5.17.0"
+   },
+   "dtype": "bfloat16",
+   "attention_implementation": "sdpa",
+   "max_input_tokens": 32768,
+   "input_length_policy": "reject-overflow",
+   "case_batch_size": 1,
+   "source_revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+   "media": "native-ordered-pil-images-v1",
+   "image_preprocessing": "shared-full-image-policy-v1-then-native-processor",
+   "hub_kernels": false,
+   "hub_kernels_note": "disabled by decision-eval bridge (--no-hub-kernels); transformers built-in ops"
+  },
+  "total_params": 9531576564,
+  "active_params": 8511800564,
+  "parameter_count_method": "embedding_excluded_parameters_v1"
+ },
+ "evaluator_version": "0.1.0",
+ "environment": {
+  "python": "3.12.16",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "evaluator_source_sha256": "065d3c92fb7839f87f86c15ff034610cf8ccb59c8000772e01b109006dbcde82",
+  "evaluator_revision": "dbfc74699b814cadc8e3384ffa8705a39958cc91",
+  "dataset_source": {
+   "repo_id": "hotchpotch/S1MB-japanese-v1",
+   "revision": "eea80b7d5d388389d257f034aeadf06c9996c57d"
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  }
+ }
+}

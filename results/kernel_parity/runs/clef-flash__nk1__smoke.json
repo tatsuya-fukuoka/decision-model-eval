@@ -1,0 +1,82 @@
+{
+ "model": "clef-flash",
+ "cond": "nk1",
+ "smoke": true,
+ "run_id": "kparity-clef-flash-nk1-smoke-20261109T124341",
+ "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+ "started_at": "2026-11-09T12:43:41+00:00",
+ "flags": [
+  "--no-hub-kernels"
+ ],
+ "env": "kparity-clef",
+ "user": "kparity",
+ "child_env_names": [
+  "CUDA_VISIBLE_DEVICES",
+  "HF_HOME",
+  "HF_HUB_CACHE",
+  "HF_HUB_DISABLE_TELEMETRY",
+  "HF_HUB_OFFLINE",
+  "HF_MODULES_CACHE",
+  "HOME",
+  "KERNELS_CACHE",
+  "LANG",
+  "PATH",
+  "PYTHONDONTWRITEBYTECODE",
+  "PYTHONUNBUFFERED",
+  "TMPDIR",
+  "TOKENIZERS_PARALLELISM",
+  "TORCHINDUCTOR_CACHE_DIR",
+  "TRANSFORMERS_OFFLINE",
+  "TRITON_CACHE_DIR",
+  "XDG_CACHE_HOME"
+ ],
+ "elapsed_seconds": 215.7,
+ "returncode": 0,
+ "finished_at": "2026-11-09T12:47:17+00:00",
+ "guard": {
+  "blocked": 1,
+  "blocked_events": [
+   {
+    "t": 1794228227.5750463,
+    "pid": 34398,
+    "kind": "blocked",
+    "event": "socket.bind",
+    "detail": "(('::1', 0),)"
+   }
+  ],
+  "processes": {
+   "uname": 1,
+   "git": 2
+  },
+  "unix_socket_connects": 0
+ },
+ "triton_cache": {
+  "exists": false,
+  "cubin_files": 0,
+  "kernel_names": []
+ },
+ "adapter_settings": {
+  "device": "cuda:0",
+  "cuda_visible_devices": "0",
+  "source_python_sha256": "1b7b50dc08d5e8d8bf6989cc7cc1eb8811efb22892572ec5f530b37356798a3a",
+  "renderer": "native-anonymous-ids-numeric-score-v1",
+  "questions_per_call": "all-case-questions",
+  "versions": {
+   "torch": "2.10.0+cu130",
+   "transformers": "5.17.0"
+  },
+  "dtype": "bfloat16",
+  "attention_implementation": "sdpa",
+  "max_input_tokens": 32768,
+  "input_length_policy": "reject-overflow",
+  "case_batch_size": 1,
+  "source_revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+  "media": "native-ordered-pil-images-v1",
+  "image_preprocessing": "shared-full-image-policy-v1-then-native-processor",
+  "hub_kernels": false,
+  "hub_kernels_note": "disabled by decision-eval bridge (--no-hub-kernels); transformers built-in ops"
+ },
+ "status": "smoke_ok",
+ "log_tail": "Loading weights:  99%|█████████▉| 753/760 [02:37<00:00, 27.72it/s]\nLoading weights:  99%|█████████▉| 756/760 [02:37<00:00, 20.65it/s]\nLoading weights: 100%|█████████▉| 759/760 [02:37<00:00, 22.05it/s]\nLoading weights: 100%|██████████| 760/760 [02:37<00:00,  4.82it/s]\n[1/2] jamc-qa-choice\n[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.\n[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.\n  partial: {'target_mass_at_prediction': 0.5, 'uniform_accuracy_baseline': 0.25, 'fixed_answer_accuracy_baseline': 0.25, 'baseline_adjusted_skill': 0.3333333333333333, 'baseline_adjusted_score': 0.3333333333333333} (5.4s)\n[2/2] jculture-mcq-noul\n  partial: {'binary_brier': 0.3237350761665181, 'accuracy': 0.5, 'positive_recall': 0.0, 'specificity': 1.0, 'precision': None, 'balanced_accuracy': 0.5, 'f1': 0.0, 'true_positive': 0.0, 'false_positive': 0.0, 'false_negative': 1.0, 'true_negative': 1.0, 'positive_prevalence': 0.46996466431095407, 'majority_accuracy_baseline': 0.5300353356890459, 'constant_brier_baseline': 0.24909787861004634, 'brier_skill': -0.2996300007569055, 'baseline_adjusted_skill': 0.0, 'baseline_adjusted_score': 0.0} (0.5s)\nbench_ja: 8 cases in 1.5s -> /srv/kparity/runs/kparity-clef-flash-nk1-smoke-20261109T124341/bench_ja.jsonl\nResults: /srv/kparity/runs/kparity-clef-flash-nk1-smoke-20261109T124341/s1mb/kparity-clef-flash-nk1-smoke-20261109T124341",
+ "work_dir": "/srv/kparity/runs/kparity-clef-flash-nk1-smoke-20261109T124341"
+}

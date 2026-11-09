@@ -1,0 +1,369 @@
+{
+ "run_id": "saihai-v1-8b-smoke-20261107T095358",
+ "benchmarks": {
+  "commonsensemoralja-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 5.809155770111829
+  },
+  "jamc-qa-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.17371673695743084
+  },
+  "janli-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 285,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.17650701105594635
+  },
+  "jcommonsenseqa-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.16284073097631335
+  },
+  "jculture-mcq-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 283,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.18870516191236675
+  },
+  "jnli-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.1628187468741089
+  },
+  "kuci-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.1721055470407009
+  },
+  "mintaka-ja-boolean-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.18006050400435925
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.2146903129760176
+  },
+  "mmmlu-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.13217812194488943
+  },
+  "jsick-sts-score": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.17537817708216608
+  },
+  "jsts-score": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.19790228293277323
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.16028138482943177
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.14510887721553445
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.18799294088967144
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.1658922431524843
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.304670870071277
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.20355557487346232
+  },
+  "jmteb-retrieval": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.18748202011920512
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.16856383299455047
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.17753818188793957
+  },
+  "jcola-noul": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 299,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.16341267712414265
+  },
+  "jamp-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.16396592487581074
+  },
+  "jsem-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.17406745697371662
+  },
+  "gpqa-ja-main-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.12437667604535818
+  },
+  "jmmlu-japan-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.13213165593333542
+  },
+  "sobaco-culture-choice": {
+   "status": "partial",
+   "counts": {
+    "cases": 2,
+    "expected": 300,
+    "succeeded": 2,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 0.11995980399660766
+  }
+ },
+ "model": {
+  "training_exposure": null,
+  "id": "hotchpotch/saihai-v1-8b",
+  "adapter": "saihai",
+  "revision": "c8aa3bbb015471496dbec3a7db2fef86581bd3cf",
+  "settings": {
+   "device": "cuda:0",
+   "cuda_visible_devices": "0",
+   "source_python_sha256": "f48ca597d1f70b2097e50a8e5ef3c45204687aad0a33ffc3be1259290d16b791",
+   "renderer": "native-saihai-exact-input-v1",
+   "questions_per_call": 1,
+   "versions": {
+    "torch": "2.10.0+cu130",
+    "transformers": "5.17.0"
+   },
+   "dtype": "bfloat16",
+   "attention_implementation": "sdpa",
+   "max_input_tokens": 65536,
+   "input_length_policy": "reject-overflow-native",
+   "native_backend": "saihai.model.TorchDecisionModel",
+   "prompt_version": "saihai-pplx-json-v1",
+   "codebook": "pplx-decider",
+   "candidate_limit": 255,
+   "score_level_limit": 10,
+   "temperature": 1.0,
+   "candidate_order": "authored; noul false,true",
+   "base_model": "llm-jp/llm-jp-4.1-8b-thinking",
+   "base_revision": "7c19bc90e49b717381e4f474ee95964c05217a28",
+   "generates_text": false
+  },
+  "total_params": 8590200832,
+  "active_params": 7784894464,
+  "parameter_count_method": "embedding_excluded_parameters_v1"
+ },
+ "evaluator_version": "0.1.0",
+ "environment": {
+  "python": "3.12.16",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "evaluator_source_sha256": "065d3c92fb7839f87f86c15ff034610cf8ccb59c8000772e01b109006dbcde82",
+  "evaluator_revision": "dbfc74699b814cadc8e3384ffa8705a39958cc91",
+  "dataset_source": {
+   "repo_id": "hotchpotch/S1MB-japanese-v1",
+   "revision": "eea80b7d5d388389d257f034aeadf06c9996c57d"
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 2,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 2,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 2,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 2,
+   "failed": 0,
+   "expected": 300
+  }
+ }
+}

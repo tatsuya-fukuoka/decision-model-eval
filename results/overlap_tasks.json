@@ -1,0 +1,190 @@
+{
+  "description": "S1MB-japanese-v1 の27タスクのうち、saihai-v1-8b の学習データ（train split）と同じ元データを持つ10タスクと、それ以外の17タスク。モデル間比較は17タスクを主とする（指示書 §4-1）。",
+  "definition": "saihai-v1-8b の学習データ（hotchpotch/saihai-v1-dataset@906504ac…）の Japanese source-family config と同じ元データを持つ S1MB タスクを『重なる』とする。同じ評価事例を学習したという意味ではない（作者は評価事例を除外したと記載）。",
+  "overlap_tasks": [
+    {
+      "task_id": "commonsensemoralja-noul",
+      "saihai_dataset_config": "jp-jdmb-commonsensemoralja-noul",
+      "train_rows": 400,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "jamp-choice",
+      "saihai_dataset_config": "jp-jdmb-jamp-choice",
+      "train_rows": 358,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "janli-choice",
+      "saihai_dataset_config": "jp-jdmb-janli-choice",
+      "train_rows": 400,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "jcola-noul",
+      "saihai_dataset_config": "jp-jdmb-jcola-noul",
+      "train_rows": 358,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "jcommonsenseqa-choice",
+      "saihai_dataset_config": "jp-jdmb-jcommonsenseqa-choice",
+      "train_rows": 400,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "jnli-choice",
+      "saihai_dataset_config": "jp-jdmb-jnli-choice",
+      "train_rows": 382,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "jsick-sts-score",
+      "saihai_dataset_config": "jp-jdmb-jsick-choice",
+      "train_rows": 395,
+      "relationship": "same_source_family（NLI 形式で学習 → STS 評価）"
+    },
+    {
+      "task_id": "jsts-score",
+      "saihai_dataset_config": "jp-jdmb-jsts-score",
+      "train_rows": 396,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "kuci-choice",
+      "saihai_dataset_config": "jp-jdmb-kuci-choice",
+      "train_rows": 400,
+      "relationship": "same_source_family"
+    },
+    {
+      "task_id": "mintaka-ja-boolean-noul",
+      "saihai_dataset_config": "jp-jdmb-mintaka-ja-boolean-noul",
+      "train_rows": 400,
+      "relationship": "same_source_family"
+    }
+  ],
+  "non_overlap_tasks": [
+    "jamc-qa-choice",
+    "jculture-mcq-noul",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-choice",
+    "generalization-japanese-math-formal-hard-noul",
+    "generalization-japanese-math-formal-hard-score",
+    "jmteb-retrieval",
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-diverse-choice",
+    "jsem-choice",
+    "gpqa-ja-main-choice",
+    "jmmlu-japan-choice",
+    "sobaco-culture-choice"
+  ],
+  "evidence": [
+    {
+      "what": "saihai-v1-8b モデルカード：『Training includes train-split examples from ten source datasets evaluated by S1MB japanese-v1 (for example JNLI, JSTS and JCommonsenseQA)』",
+      "url": "https://huggingface.co/hotchpotch/saihai-v1-8b/blob/907eb3b2b60a399efa7e8634d4d0c7ff738c4716/README.md"
+    },
+    {
+      "what": "saihai-v1-8b training-provenance.json：学習データを saihai-v1-dataset@906504ac4b72e133a613011318afd8206fb5e8ec の train split 全 33,532 行に固定（manifest_sha256 dd9c7017…）",
+      "url": "https://huggingface.co/hotchpotch/saihai-v1-8b/blob/907eb3b2b60a399efa7e8634d4d0c7ff738c4716/training-provenance.json"
+    },
+    {
+      "what": "saihai-v1-dataset の固定 manifest：jp-jdmb-* の10 config（上表）。取得したファイルの SHA-256 が training-provenance の manifest_sha256 と一致",
+      "url": "https://huggingface.co/datasets/hotchpotch/saihai-v1-dataset/blob/906504ac4b72e133a613011318afd8206fb5e8ec/dataset-manifest.json",
+      "sha256": "dd9c70172b1c8d10cb0a3c9d4a97ef270b2612ab52cb590716aeb18350394987"
+    },
+    {
+      "what": "S1MB 公式ドキュメント docs/training_exposure.md『Saihai 8B example』の対応表（同じ10タスクを same source family と明記）",
+      "url": "https://github.com/hotchpotch/S1MB/blob/dbfc74699b814cadc8e3384ffa8705a39958cc91/docs/training_exposure.md#saihai-8b-example"
+    }
+  ],
+  "per_model": {
+    "saihai-v1-8b": {
+      "overlap": "あり",
+      "tasks": [
+        "commonsensemoralja-noul",
+        "jamp-choice",
+        "janli-choice",
+        "jcola-noul",
+        "jcommonsenseqa-choice",
+        "jnli-choice",
+        "jsick-sts-score",
+        "jsts-score",
+        "kuci-choice",
+        "mintaka-ja-boolean-noul"
+      ],
+      "basis": "上記 evidence"
+    },
+    "saihai-v1-310m": {
+      "overlap": "あり",
+      "tasks": [
+        "commonsensemoralja-noul",
+        "jcommonsenseqa-choice",
+        "jnli-choice",
+        "jsts-score",
+        "kuci-choice",
+        "mintaka-ja-boolean-noul",
+        "janli-choice"
+      ],
+      "basis": "モデルカード『Training includes the train splits of seven Japanese source datasets evaluated by S1MB japanese-v1 (CommonsenseMoralJA, JCommonsenseQA, JNLI, JSTS, KUCI, Mintaka and JaNLI)』 https://huggingface.co/hotchpotch/saihai-v1-310m/blob/704809fa038ff647b1a0e9cda963f1b8a06e0c95/README.md",
+      "note": "7タスクはいずれも10タスクの部分集合。17タスクとの重なりの記載はない。ベースモデル ruri-v3-reranker-310m の事前学習データとの重なりは不明。"
+    },
+    "sokudan-ja-310m": {
+      "overlap": "不明（S1MB について記載なし）",
+      "note": "bench_ja とは生成元（qwen3:30b-a3b、label-conditioned generation）が学習データと同じと sokudan 側が記載。bench_ja の結果は sokudan に有利な可能性（指示書 §4-2）。"
+    },
+    "laya-multilingual": {
+      "overlap": "不明（日本語 S1MB タスクについて記載なし）",
+      "note": "S1MB evaluator/model-training-exposure.json の laya-multilingual の開示は英語タスク（laya--*）のみ。"
+    },
+    "julia-1": {
+      "overlap": "不明（記載なし）",
+      "note": "カードの学習・評価記述は typed-decisions など英語中心。"
+    },
+    "strands-decider-2b": {
+      "overlap": "不明（記載なし）",
+      "note": "カードの datasets は yahoo_answers_topics / paws / banking77 など英語。"
+    },
+    "d3-nano": {
+      "overlap": "不明（記載なし）"
+    },
+    "d3-mini": {
+      "overlap": "不明（記載なし）"
+    },
+    "h2o-lightning-4b": {
+      "overlap": "不明（記載なし）",
+      "note": "カードは Decision Index の学習データとの重なり検査を記載するが、S1MB 日本語タスクについての記載はない。"
+    },
+    "clef-flash": {
+      "overlap": "不明（記載なし）"
+    },
+    "d3-lite": {
+      "overlap": "不明（記載なし）",
+      "tasks": [],
+      "basis": "固定リビジョンの README に S1MB / JDMB / 各元データ（JNLI・JSTS・JCommonsenseQA など）を学習に使ったという記載なし（2026-11-08 に検索）。Decision 2.0 のカードは『Training data audited at row level against all Index test items』と記載（Jev Decision Index の評価事例との照合で、S1MB との関係は記載なし）。"
+    },
+    "decision-2.0-nox-4b": {
+      "overlap": "不明（記載なし）",
+      "tasks": [],
+      "basis": "固定リビジョンの README に S1MB / JDMB / 各元データ（JNLI・JSTS・JCommonsenseQA など）を学習に使ったという記載なし（2026-11-08 に検索）。Decision 2.0 のカードは『Training data audited at row level against all Index test items』と記載（Jev Decision Index の評価事例との照合で、S1MB との関係は記載なし）。"
+    },
+    "d3-flash": {
+      "overlap": "不明（記載なし）",
+      "tasks": [],
+      "basis": "固定リビジョンの README に S1MB / JDMB / 各元データ（JNLI・JSTS・JCommonsenseQA など）を学習に使ったという記載なし（2026-11-08 に検索）。Decision 2.0 のカードは『Training data audited at row level against all Index test items』と記載（Jev Decision Index の評価事例との照合で、S1MB との関係は記載なし）。"
+    },
+    "decision-2.0-lux-9b": {
+      "overlap": "不明（記載なし）",
+      "tasks": [],
+      "basis": "固定リビジョンの README に S1MB / JDMB / 各元データ（JNLI・JSTS・JCommonsenseQA など）を学習に使ったという記載なし（2026-11-08 に検索）。Decision 2.0 のカードは『Training data audited at row level against all Index test items』と記載（Jev Decision Index の評価事例との照合で、S1MB との関係は記載なし）。"
+    }
+  },
+  "caveats": [
+    "『重ならない17タスク』は saihai-v1-8b を基準にした分類で、他モデルにとって未学習であることを保証しない（他モデルの多くは学習データの記載がなく不明）。",
+    "合成8タスク（generalization-*）は17タスクに含まれる。",
+    "事前学習（ベースモデル）データとの重なりは、どのモデルについても不明。"
+  ]
+}

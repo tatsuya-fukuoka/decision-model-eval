@@ -1,0 +1,59 @@
+# 隔離仮想環境（envs/<name>/.venv）。S1MB 公式評価器の uv.lock から --frozen で作る。
+# python：公式手順（OPEN_MODELS.md の Saihai 8B / 310M）が Python 3.12 を指定するので全環境 3.12 に揃える
+#         （評価器の .python-version は 3.11）。
+# uninstall：kernels（open-models extra に含まれる）は transformers が Hub（kernels-community/*）から
+#   カーネル（d3/Clef では fla＝Triton ソース、activation＝コンパイル済み .so）を取得して実行する仕組みで、
+#   事前の確認なしに外部コードを実行することになるため全環境で外す（fla の確認と一致確認は kparity-* 環境で別途実施）。
+#   transformers は本体の実装にフォールバックする（同じ演算。数値は丸め程度の差がありうる）。
+# overrides：公式手順が「別環境で入れる」と指定する依存（OPEN_MODELS.md）。適用後の freeze を manifest に記録する。
+s1mb-base:
+  extras: []
+  python: "3.12"
+s1mb-bekko:          # saihai-v1-310m（OPEN_MODELS.md「Saihai 310M」：bekko-v0 extra）
+  extras: [bekko-v0]
+  python: "3.12"
+s1mb-open-models:    # saihai-v1-8b, d3-nano, d3-mini
+  extras: [open-models]
+  python: "3.12"
+  uninstall: [kernels]
+
+s1mb-clef:           # clef-flash（OPEN_MODELS.md：open-models + meta-encoder）
+  extras: [open-models, meta-encoder]
+  python: "3.12"
+  uninstall: [kernels]
+
+s1mb-julia:          # julia-1（OPEN_MODELS.md：release は transformers>=5.0,<5.1 を宣言、別環境）
+  extras: [open-models]
+  python: "3.12"
+  overrides: ["transformers>=5.0,<5.1"]
+  # （kernels は全環境で外す。冒頭のコメント参照。transformers 5.0 とは import 時点でも非互換）
+  uninstall: [kernels]
+s1mb-laya:           # laya-multilingual（laya==0.3.20 を読んでから使う）
+  extras: [laya]
+  python: "3.12"
+s1mb-sokudan:        # sokudan-ja-310m（自作アダプタ）。sokudan の uv.lock は datasets 5 系で評価器（datasets<5）と衝突するため、
+                     # 評価器の open-models 環境（transformers 5.17.0 は sokudan の lock と同じ）に固定コミットの sokudan を --no-deps で追加
+  extras: [open-models]
+  python: "3.12"
+  local_no_deps: [third_party/sokudan]
+  overrides: ["python-dotenv>=1.0,<2", "rich>=13.7,<16"]
+  uninstall: [kernels]
+
+s1mb-strands:        # strands-decider-2b（自作アダプタ）。strands-decider==0.3.0 の要件（transformers>=5.15,<6, peft>=0.21,
+                     # huggingface_hub>=1.5）は open-models の lock（5.17.0 / 0.21.0 / 1.33.0）で満たすので --no-deps で追加。
+                     # wheel は PyPI から取得し sha256 b5817ffb469127f611ca375f9c6342ec232aac27267405dcba19d0c2b7a100b1 を確認（scripts/fetch_packages.sh）
+  extras: [open-models]
+  python: "3.12"
+  local_no_deps: [data/packages/strands_decider-0.3.0-py3-none-any.whl]
+  uninstall: [kernels]
+
+# カーネル一致確認（ユーザー承認 2026-11-09）：Hub カーネル（kernels-community/fla v1、Triton ソース）の有無で
+# 結果が一致するかを確かめる専用環境。専用の非 root ユーザーで実行するので、Python は /opt に置いた
+# uv の CPython 3.12.16 のコピーを使う（/root 配下は非 root から読めない）。kernels==0.16.0 は lock で固定し、外さない。
+# カーネルなし・あり・fp32 の全条件をこの環境で実行する（なしの条件は bridge の --no-hub-kernels）。
+kparity-open:        # d3-nano / d3-mini / d3-lite / d3-flash
+  extras: [open-models]
+  python: /opt/kparity-python/bin/python3.12
+kparity-clef:        # clef-flash
+  extras: [open-models, meta-encoder]
+  python: /opt/kparity-python/bin/python3.12

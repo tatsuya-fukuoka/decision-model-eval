@@ -1,0 +1,366 @@
+{
+ "run_id": "julia-1__ext-full-20261107T135427",
+ "benchmarks": {
+  "commonsensemoralja-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 12.649451428093016
+  },
+  "jamc-qa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 10.477996939094737
+  },
+  "janli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 285,
+    "expected": 285,
+    "succeeded": 285,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 11.27851289510727
+  },
+  "jcommonsenseqa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 12.462961681885645
+  },
+  "jculture-mcq-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 283,
+    "expected": 283,
+    "succeeded": 283,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 12.648738062940538
+  },
+  "jnli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 15.28059716289863
+  },
+  "kuci-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 11.616196321090683
+  },
+  "mintaka-ja-boolean-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 11.481764316093177
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 13.174554297002032
+  },
+  "mmmlu-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 13.541670453967527
+  },
+  "jsick-sts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 12.470285507850349
+  },
+  "jsts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 12.072571400087327
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 14.985639681108296
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 13.238521147053689
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 14.123960740165785
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 12.076239551184699
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 10.60192501405254
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 10.524829061003402
+  },
+  "jmteb-retrieval": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 14.22352607990615
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 8.415188631042838
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 15.042290325043723
+  },
+  "jcola-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 299,
+    "expected": 299,
+    "succeeded": 299,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 15.467950210906565
+  },
+  "jamp-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 15.546300993999466
+  },
+  "jsem-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 14.427521625068039
+  },
+  "gpqa-ja-main-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 11.193211911944672
+  },
+  "jmmlu-japan-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 9.015164403012022
+  },
+  "sobaco-culture-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 11.132299467921257
+  }
+ },
+ "model": {
+  "training_exposure": null,
+  "id": "SupersonicLabs/Julia-1",
+  "adapter": "julia",
+  "revision": "a85b127321d580d65176c89ced8273f305745d85",
+  "settings": {
+   "device": "cuda:0",
+   "cuda_visible_devices": "0",
+   "source_python_sha256": "ead898a01a0e438de1ba3454584248a28e438b8e2de734a6a313a3cf3f343f0a",
+   "renderer": "native-markers-numeric-score-values-v1",
+   "questions_per_call": 1,
+   "versions": {
+    "torch": "2.10.0+cu130",
+    "transformers": "5.0.0"
+   },
+   "dtype": "native-weights-bfloat16-autocast",
+   "attention_implementation": "sdpa",
+   "max_input_tokens": 8192,
+   "head_length": 512,
+   "max_candidates": 20,
+   "max_option_tokens": 48,
+   "input_length_policy": "explicit-native-adaptive-budget-v1",
+   "source_revision": "a85b127321d580d65176c89ced8273f305745d85",
+   "backend": "TransformerEngine",
+   "candidate_budget_policy": "preserve-all-candidate-counts;native-description-truncation",
+   "native_truncation_enabled": true
+  },
+  "total_params": 144292867,
+  "active_params": 45987715,
+  "parameter_count_method": "embedding_excluded_parameters_v1"
+ },
+ "evaluator_version": "0.1.0",
+ "environment": {
+  "python": "3.12.16",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "evaluator_source_sha256": "065d3c92fb7839f87f86c15ff034610cf8ccb59c8000772e01b109006dbcde82",
+  "evaluator_revision": "dbfc74699b814cadc8e3384ffa8705a39958cc91",
+  "dataset_source": {
+   "repo_id": "hotchpotch/S1MB-japanese-v1",
+   "revision": "eea80b7d5d388389d257f034aeadf06c9996c57d"
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  }
+ }
+}

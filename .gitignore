@@ -1,0 +1,26 @@
+# --- 評価データ・外部コード（再配布しない／コミットしない）---
+/third_party/
+/data/
+/hf_cache/
+*.parquet
+*.arrow
+# S1MB 公式評価器の生出力（入力ハッシュ等を含む）
+results/s1mb_runs/
+# --- 環境 ---
+.venv/
+envs/*/.venv/
+envs/*/uv.lock.bak
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# --- 認証情報 ---
+.env
+*.token
+
+# 正解ラベルから作った parity 用予測（評価データの再配布になるため含めない）
+results/raw/parity-oracle*/
+results/logs/
+
+# カーネル一致確認：公式評価器の生出力（入力ハッシュ等を含む）
+results/kernel_parity/s1mb_runs/

@@ -1,0 +1,367 @@
+{
+ "run_id": "saihai-v1-310m__ext-full-20261107T124027",
+ "benchmarks": {
+  "commonsensemoralja-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 24.956808106042445
+  },
+  "jamc-qa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 24.312444643117487
+  },
+  "janli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 285,
+    "expected": 285,
+    "succeeded": 285,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 26.418739869026467
+  },
+  "jcommonsenseqa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.79345082002692
+  },
+  "jculture-mcq-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 283,
+    "expected": 283,
+    "succeeded": 283,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.877799052977934
+  },
+  "jnli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.908748605987057
+  },
+  "kuci-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 30.126462736167014
+  },
+  "mintaka-ja-boolean-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.95001390692778
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 27.87646261509508
+  },
+  "mmmlu-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 30.145681258989498
+  },
+  "jsick-sts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.822211794788018
+  },
+  "jsts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.62489009089768
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.35220511490479
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 29.420354241970927
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 28.364587493008003
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 25.13043652800843
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 22.94708275096491
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 21.60162945999764
+  },
+  "jmteb-retrieval": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 26.35981482407078
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.8507160639856
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.08865342498757
+  },
+  "jcola-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 299,
+    "expected": 299,
+    "succeeded": 299,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.026934426976368
+  },
+  "jamp-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.482429908122867
+  },
+  "jsem-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 20.78824924491346
+  },
+  "gpqa-ja-main-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 22.924342851852998
+  },
+  "jmmlu-japan-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.183723871130496
+  },
+  "sobaco-culture-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.659515673061833
+  }
+ },
+ "model": {
+  "training_exposure": null,
+  "id": "hotchpotch/saihai-v1-310m",
+  "adapter": "saihai-310m",
+  "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+  "settings": {
+   "device": "cuda:0",
+   "cuda_visible_devices": "0",
+   "source_python_sha256": "1ea50466c4fc2b867cf2c806c2670582859041743a0bf62a87765385f193e4fa",
+   "renderer": "native-bekko-typed-input-anonymous-slots-v1",
+   "questions_per_call": 1,
+   "versions": {
+    "torch": "2.10.0+cu130",
+    "transformers": "5.17.0"
+   },
+   "loader": "AutoModel/BekkoModel",
+   "dtype": "bfloat16-autocast",
+   "attention_implementation": "sdpa",
+   "input_length_policy": "native-adaptive-v1-truncate",
+   "query_truncation": "balanced",
+   "candidate_truncation": "right",
+   "budget_allocation": "half-shares-lend-unused-candidate-odd-token",
+   "context_length": 8192,
+   "query_length": 8190,
+   "document_length": 3800,
+   "prefix_layout": "instruction_state",
+   "microbatch_tokens": 64000
+  },
+  "total_params": 314614275,
+  "active_params": 235971075,
+  "parameter_count_method": "embedding_excluded_parameters_v1"
+ },
+ "evaluator_version": "0.1.0",
+ "environment": {
+  "python": "3.12.16",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "evaluator_source_sha256": "065d3c92fb7839f87f86c15ff034610cf8ccb59c8000772e01b109006dbcde82",
+  "evaluator_revision": "dbfc74699b814cadc8e3384ffa8705a39958cc91",
+  "dataset_source": {
+   "repo_id": "hotchpotch/S1MB-japanese-v1",
+   "revision": "eea80b7d5d388389d257f034aeadf06c9996c57d"
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  }
+ }
+}

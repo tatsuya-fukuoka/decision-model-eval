@@ -1,0 +1,173 @@
+# 評価対象モデル（指示書 §3）。revision は src/manifest.py が解決して results/manifest.json に固定する。
+# runner:
+#   s1mb-official : S1MB公式評価器のアダプタを使う（third_party/S1MB/evaluator/src/s1mb/adapters）
+#   custom        : 公式アダプタが無いため src/adapters/ の自前アダプタを使う
+# env: 隔離仮想環境の名前（envs/<env>/、定義は configs/envs.yaml）。モデルごとの依存衝突を避ける。
+# s1mb_args: `s1mb run` に渡す引数（OPEN_MODELS.md の公式手順に従う）。{snapshot} は固定リビジョンのローカルスナップショット。
+tier1:
+  - name: saihai-v1-310m
+    hf_id: hotchpotch/saihai-v1-310m
+    runner: s1mb-official
+    s1mb_adapter: saihai-310m
+    env: s1mb-bekko
+    trust_remote_code: true
+    s1mb_args: ["--source", "{snapshot}", "--device", "cuda:0"]
+  - name: saihai-v1-8b
+    hf_id: hotchpotch/saihai-v1-8b
+    runner: s1mb-official
+    s1mb_adapter: saihai
+    env: s1mb-open-models
+    trust_remote_code: true
+    s1mb_args: ["--source", "{snapshot}", "--device", "cuda:0"]
+  - name: sokudan-ja-310m
+    hf_id: GeneLab/sokudan-ja-310m
+    runner: custom
+    adapter: sokudan
+    env: s1mb-sokudan
+    trust_remote_code: false
+    custom_adapter: adapters/sokudan_s1mb.py:SokudanAdapter
+    custom_kwargs: {checkpoint: "{snapshot}", revision: "{revision}", device: "cuda:0"}
+    dependencies:
+      - hf_id: sbintuitions/modernbert-ja-310m
+        reason: "sokudan の TorchBackend が config.backbone を revision 指定なしで from_pretrained する（重みはチェックポイントで strict に上書き、トークナイザはこのリポジトリのもの）"
+  - name: laya-multilingual
+    hf_id: convaiinnovations/laya-multilingual
+    runner: s1mb-official
+    s1mb_adapter: laya
+    env: s1mb-laya
+    trust_remote_code: false
+    s1mb_args: ["--device", "cuda:0"]
+  - name: julia-1
+    hf_id: SupersonicLabs/Julia-1
+    runner: s1mb-official
+    s1mb_adapter: julia
+    env: s1mb-julia
+    trust_remote_code: true
+    s1mb_args: ["--device", "cuda:0"]
+  - name: strands-decider-2b
+    hf_id: StrandsAgents/strands-decider-2B-hobson-v19
+    runner: custom
+    adapter: strands
+    env: s1mb-strands
+    trust_remote_code: false
+    custom_adapter: adapters/strands_s1mb.py:StrandsAdapter
+    custom_kwargs: {checkpoint: "{snapshot}", revision: "{revision}", device: "cuda:0"}
+    dependencies:
+      - hf_id: Qwen/Qwen3.5-2B-Base
+        revision: b1485b2fa6dfa1287294f269f5fb618e03d52d7c
+        reason: "LoRA の基盤。strands_decider.modeling が checkpoint の provenance.json の base_model_revision を指定して読む"
+  - name: d3-nano
+    hf_id: vllm-sr/d3-nano
+    runner: s1mb-official
+    s1mb_adapter: d3
+    env: s1mb-open-models
+    trust_remote_code: unknown
+    s1mb_args: ["--device", "cuda:0", "--context-limit", "32768"]
+    bridge_args: ["--no-hub-kernels"]
+    reference: "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）"
+  - name: d3-mini
+    hf_id: vllm-sr/d3-mini
+    runner: s1mb-official
+    s1mb_adapter: d3
+    env: s1mb-open-models
+    trust_remote_code: unknown
+    s1mb_args: ["--device", "cuda:0", "--context-limit", "32768"]
+    bridge_args: ["--no-hub-kernels"]
+    reference: "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）"
+  - name: h2o-lightning-4b
+    hf_id: h2oai/h2o-lightning-4b
+    runner: custom
+    adapter: h2o_lightning
+    env: h2o
+    trust_remote_code: unknown
+    skip: "ユーザー判断（2026-11-08）によりスキップ。one-way アダプタの作成と作者の読み出しとの一致確認の工数が大きいため。未実行"
+    note: one-way 読み出しのみ。two-way は未実施（指示書 §3）
+  - name: clef-flash
+    hf_id: Cloudflare/clef-flash
+    runner: s1mb-official
+    s1mb_adapter: clef
+    env: s1mb-clef
+    trust_remote_code: true
+    s1mb_args: ["--device", "cuda:0", "--context-limit", "32768"]
+    bridge_args: ["--no-hub-kernels"]
+    reference: "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）"
+    note: テキストのみの入力で評価（指示書 §3）
+
+# 拡張設定（ユーザー判断 2026-11-07）：入力上限を変えた追加実行。既定設定の結果を主表とし、こちらは別表。
+# base の設定（リビジョン・環境・コード確認）を引き継ぎ、ここに書いた項目だけを上書きする。
+extended:
+  - name: saihai-v1-310m__ext
+    base: saihai-v1-310m
+    s1mb_args: ["--source", "{snapshot}", "--device", "cuda:0", "--native-adaptive-budget"]
+    extended: "公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）"
+  - name: julia-1__ext
+    base: julia-1
+    s1mb_args: ["--device", "cuda:0", "--native-adaptive-budget"]
+    extended: "公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）"
+  - name: laya-multilingual__ext
+    base: laya-multilingual
+    s1mb_args: ["--device", "cuda:0", "--max-len", "8192", "--head-max-len", "4096"]
+    extended: "--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）"
+  - name: sokudan-ja-310m__ext
+    base: sokudan-ja-310m
+    custom_kwargs: {checkpoint: "{snapshot}", revision: "{revision}", device: "cuda:0", max_tokens: 8192}
+    extended: "joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）"
+  - name: strands-decider-2b__ext
+    base: strands-decider-2b
+    custom_kwargs: {checkpoint: "{snapshot}", revision: "{revision}", device: "cuda:0", max_length: 32768}
+    extended: "max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）"
+
+tier2:
+  - name: d3-lite
+    hf_id: vllm-sr/d3-lite
+    runner: s1mb-official
+    s1mb_adapter: d3
+    env: s1mb-open-models
+    trust_remote_code: unknown
+    s1mb_args: ["--device", "cuda:0", "--context-limit", "32768"]
+    bridge_args: ["--no-hub-kernels"]
+    reference: "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）"
+  - name: decision-2.0-nox-4b
+    hf_id: vllm-sr/Decision-2.0-Nox-4B
+    runner: s1mb-official
+    s1mb_adapter: decision2
+    env: s1mb-open-models
+    trust_remote_code: unknown
+    s1mb_args: ["--source", "{snapshot}", "--device", "cuda:0"]
+    note: 公式アダプタは kernels=False（Hub カーネルを使わない）。context_limit は作者の既定（引き上げ不可）
+  - name: microsoft-decision-1
+    api: foundry
+    status: not_run
+    reason: 有料API。ユーザーの承認が無いため実行しない（指示書 §1）
+
+tier3:
+  - name: d3-flash
+    hf_id: vllm-sr/d3-flash
+    runner: s1mb-official
+    s1mb_adapter: d3
+    env: s1mb-open-models
+    trust_remote_code: unknown
+    s1mb_args: ["--device", "cuda:0", "--context-limit", "32768"]
+    bridge_args: ["--no-hub-kernels"]
+    reference: "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）"
+  - name: decision-2.0-lux-9b
+    hf_id: vllm-sr/Decision-2.0-Lux-9B
+    runner: s1mb-official
+    s1mb_adapter: decision2
+    env: s1mb-open-models
+    trust_remote_code: unknown
+    s1mb_args: ["--source", "{snapshot}", "--device", "cuda:0"]
+    note: 公式アダプタは kernels=False（Hub カーネルを使わない）
+
+excluded:
+  - {name: Kev, reason: 英語のみ}
+  - {name: Bekko, reason: 英語のみ}
+  - {name: CLM / CLM-8B, reason: 英語のみ}
+  - {name: Nimble (9B), reason: 非商用ライセンス（CC BY-NC 4.0）}
+  - {name: StartLux (9B Instant / AutoThink), reason: 非商用ライセンス（CC BY-NC 4.0）}
+  - {name: Jeff-1.1, reason: 非商用ライセンス（CC BY-NC 4.0）}
+  - {name: pplx-decider (27B), reason: 約9B超}
+  - {name: AutoTrust-JEV (27B), reason: 約9B超}
+  - {name: Clef (27B), reason: 約9B超}
+  - {name: Jeff 27B / 31B, reason: 約9B超}
+  - {name: Jev, reason: 重みが非公開}

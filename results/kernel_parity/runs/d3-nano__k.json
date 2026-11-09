@@ -1,0 +1,342 @@
+{
+ "model": "d3-nano",
+ "cond": "k",
+ "smoke": false,
+ "run_id": "kparity-d3-nano-k-20261109T181356",
+ "revision": "8198c9f763b046605b2f4827b4999971fa2c92c4",
+ "started_at": "2026-11-09T18:13:56+00:00",
+ "flags": [
+  "--exclude-kernel-repo",
+  "kernels-community/activation"
+ ],
+ "env": "kparity-open",
+ "user": "kparity",
+ "child_env_names": [
+  "CUDA_VISIBLE_DEVICES",
+  "HF_HOME",
+  "HF_HUB_CACHE",
+  "HF_HUB_DISABLE_TELEMETRY",
+  "HF_HUB_OFFLINE",
+  "HF_MODULES_CACHE",
+  "HOME",
+  "KERNELS_CACHE",
+  "LANG",
+  "PATH",
+  "PYTHONDONTWRITEBYTECODE",
+  "PYTHONUNBUFFERED",
+  "TMPDIR",
+  "TOKENIZERS_PARALLELISM",
+  "TORCHINDUCTOR_CACHE_DIR",
+  "TRANSFORMERS_OFFLINE",
+  "TRITON_CACHE_DIR",
+  "XDG_CACHE_HOME"
+ ],
+ "elapsed_seconds": 921.4,
+ "returncode": 0,
+ "finished_at": "2026-11-09T18:29:17+00:00",
+ "guard": {
+  "blocked": 1,
+  "blocked_events": [
+   {
+    "t": 1794248040.6723366,
+    "pid": 62816,
+    "kind": "blocked",
+    "event": "socket.bind",
+    "detail": "(('::1', 0),)",
+    "stack": [
+     "<frozen importlib._bootstrap_external>:999 exec_module",
+     "<frozen importlib._bootstrap>:488 _call_with_frames_removed",
+     "/workspace/decision-eval/envs/kparity-open/.venv/lib/python3.12/site-packages/urllib3/util/__init__.py:4 <module>",
+     "<frozen importlib._bootstrap>:1360 _find_and_load",
+     "<frozen importlib._bootstrap>:1331 _find_and_load_unlocked",
+     "<frozen importlib._bootstrap>:935 _load_unlocked",
+     "<frozen importlib._bootstrap_external>:999 exec_module",
+     "<frozen importlib._bootstrap>:488 _call_with_frames_removed",
+     "/workspace/decision-eval/envs/kparity-open/.venv/lib/python3.12/site-packages/urllib3/util/connection.py:137 <module>",
+     "/workspace/decision-eval/envs/kparity-open/.venv/lib/python3.12/site-packages/urllib3/util/connection.py:127 _has_ipv6"
+    ]
+   }
+  ],
+  "processes": {
+   "ldconfig": 1,
+   "file": 1,
+   "gcc": 8,
+   "ptxas-blackwell": 190,
+   "uname": 1,
+   "git": 17
+  },
+  "unix_socket_connects": 0
+ },
+ "triton_cache": {
+  "exists": true,
+  "cubin_files": 94,
+  "kernel_names": [
+   "chunk_fwd_kernel_o",
+   "chunk_gated_delta_rule_fwd_kernel_h_blockdim64",
+   "chunk_gated_delta_rule_fwd_kkt_solve_kernel",
+   "chunk_local_cumsum_scalar_kernel",
+   "l2norm_fwd_kernel",
+   "layer_norm_gated_fwd_kernel",
+   "recompute_w_u_fwd_kernel"
+  ]
+ },
+ "adapter_settings": {
+  "device": "cuda:0",
+  "cuda_visible_devices": "0",
+  "source_python_sha256": "9114cfd34df648cfba22c346d9c0a94cc4ea02a065b4e33d4a1a161a5781e89c",
+  "renderer": "native-structured-anonymous-numeric-score-v1",
+  "questions_per_call": 1,
+  "versions": {
+   "torch": "2.10.0+cu130",
+   "transformers": "5.17.0"
+  },
+  "cuda_shards": 1,
+  "hub_kernels": true,
+  "convolution_backend": "torch-gpu",
+  "rotary_backend": "torch-gpu",
+  "kernels_version": "0.16.0",
+  "excluded_kernel_repos": [
+   "kernels-community/activation"
+  ],
+  "excluded_kernel_layers": [
+   "FastGELU",
+   "GeLU",
+   "GeluTanh",
+   "NewGELU",
+   "QuickGELU",
+   "SiLU"
+  ],
+  "kernel_scope": "fla のみ適用（activation は未適用）",
+  "kernel_diagnostics": {
+   "non_core_module_types": {},
+   "non_core_forward_modules": {
+    "d3_runtime": 1,
+    "_fla_cuda_fe2bb66.layers": 18
+   },
+   "loaded_kernels": [
+    "LoadedKernel(metadata=Metadata(id=_fla_cuda_fe2bb66, name=PyKernelName { inner: KernelName(\"fla\") }, version=1, license=\"MIT\", upstream=None, source=None, python_depends=[\"einops\"], backend=BackendInfo(backend_type=Backend.CUDA, archs=None), digest=Digest(algorithm=DigestAlgorithm.SHA256, files={\"__init__.py\": \"bVRNYUhThvULeUaovvQFZCJ9IZZsC+0kU/HbnXdYT1A=\", \"_ops.py\": \"pXgvH5hf/dXVr6/amV+mRqgiBUGncbV3gbMubhmlOW4=\", \"layers.py\": \"/39XVQW4d4GHeNROqT67ujKbItdteLBtm0PT6zq41YQ=\", \"modules/__init__.py\": \"6ZjjRMt6Rf+2OegXDC8w58RD1IW3SBK+dxBoZa4Uohc=\", \"modules/activations.py\": \"Lp7xLUf7r785nt93NFhqoSQM+G7AK2e6kviE2/0TRJs=\", \"modules/backends/__init__.py\": \"l0tLqWyPFwwDRTdnHZYBzoux6J/LOFveJ53KREAKKDk=\", \"modules/backends/triton_ascend/__init__.py\": \"vbU1UZwQDjVfF75INGYuWlIhuUTzx2TuZHIvme/QSMw=\", \"modules/backends/triton_ascend/activations.py\": \"eqE/iXLZZEan7XHSa9ziz7mWNYwxTC5kIcJiwDwRr/Y=\", \"modules/backends/triton_ascend/causal_conv1d.py\": \"VRxcTWPBB221dgd0+eNHEzCi9Echi6B2XOINtNOjHsw=\", \"modules/backends/triton_ascend/fused_cross_entropy.py\": \"RITRIWoSOKhG8Mz7odkko27gESEd8M48ICc1IXRSVPg=\", \"modules/backends/triton_ascend/fused_kl_div.py\": \"jb7XzKT6AKmXl8NxjZ4/SNofjdD3ioi4Df/l4KsIAtI=\", \"modules/backends/triton_ascend/fused_linear_cross_entropy.py\": \"Z8/wQfPzJTg9ZICxdsABldRPsMa+mUZUTHhCJS2OeQc=\", \"modules/backends/triton_ascend/grpo.py\": \"Jy+RkxbJ4RgJsEbk0xNgnw/D3Gj/P+6xDaMfx3I7DPE=\", \"modules/backends/triton_ascend/layernorm.py\": \"7uKqeIraFdvcAVR0g6CLw+NJDCX8cLRMjNGHoFx1AnM=\", \"modules/backends/triton_ascend/rotary.py\": \"+CmvapJJ3AOlwHbRxxSEIeVDjmlFPRno+5aqdfAHznI=\", \"modules/conv/__init__.py\": \"WZKA4OJWHEN0bg2Yl2i2dvfkSp9GZKaD65abY8pSKbw=\", \"modules/conv/causal_conv1d.py\": \"sHN5nlzDzSQwgo40OPt9lzcLRzZZnPCFvS/pmfK8L9k=\", \"modules/conv/cp/__init__.py\": \"BKKfEjTjwyEAwDu66avCFolqnmrv9qHHNvxjfOHi3fY=\", \"modules/conv/cp/ops.py\": \"pv7PGhmkfBsFt4tY8Hd0UAHzUPqp6DhgjRJmUujWitU=\", \"modules/conv/cuda/__init__.py\": \"q35Kd12ITYtHp5JtaAhQJ6/YCEY95RWWveKoFPJ/VCU=\", \"modules/conv/cuda/ops.py\": \"YE2httgrnIB1iSE5Uw9h1wtnq0UtybPuouF3z2reUb0=\", \"modules/conv/long_conv.py\": \"h+wI2DdlBSQIZC335mwgBsjxGbByGaklb6Nv4WcQMMg=\", \"modules/conv/short_conv.py\": \"DdAbuCpegRP32xEECOQQ4Ty3gWAOiFUzJLCD2mxcU1w=\", \"modules/conv/triton/__init__.py\": \"fDLG2FdP68jqqsBxNdKifAIEjmvGzXNrLm/xDMrfbvg=\", \"modules/conv/triton/kernels.py\": \"EK+wcpRMAGXKGmFCrZzxEeuZJmWvzUqxdTBYLwrpFT8=\", \"modules/conv/triton/ops.py\": \"jIxuam5Ch5U3ErbT8D6Zn/5FqBoTq15kcJ9BGMD8exU=\", \"modules/convolution.py\": \"WREsoV3gCce7rMEdpuEsyBgvmfbhk2IFdpUrr4TMtBw=\", \"modules/feature_map.py\": \"sfoRvsdgvhtWkKuMYE/f1c7eyINwEaZ9TfItktWD+RE=\", \"modules/fused_bitlinear.py\": \"lWTe4Ym60A+rHZTdQ6cZqa1Cje5vG/xMWvzLSAzLpQc=\", \"modules/fused_cross_entropy.py\": \"si+ZNK/vu/TERnt/v2/Tm+ZBfn3poUoPDDTuJmrEuYM=\", \"modules/fused_kl_div.py\": \"IDl78EMB9KXWmbV2cflnbXmcQpzdoqkwlEj4tvAPsbA=\", \"modules/fused_linear_cross_entropy.py\": \"SruIxSe0Hhlf7n0upOldvn9HwOfL6XQ42N6qGZC6aOA=\", \"modules/fused_norm_gate.py\": \"LAOhNgUSEiIU3Y5Ya5EHRjMAxHT0StODm04AUcL4Nys=\", \"modules/grpo.py\": \"JPZnSGESIMmHDVkfYDSUzbm1qb2vY6dmDmFvSMI53RU=\", \"modules/l2norm.py\": \"LchUl4mEXyx2cgHPuNgUhkorbNeuN+P7SfJyGXX0OyI=\", \"modules/l2warp.py\": \"5oJlj6JRXBGe5ZANNnUA8GLIjlzXCnddtz2lwgKn6WA=\", \"modules/layernorm.py\": \"1QhCZYF7pFRmZTxCWC55oG1uB6Lak5RXYca8MF5q5SA=\", \"modules/layernorm_gated.py\": \"s/c/gRsZ3O6jXwY3b9owPaN1QAoOvsSevWuW2EXuJjE=\", \"modules/mlp.py\": \"q09Zw5Bttqq27hnlybbQ9ncr0jSw1UCrJH2Ewh9roV4=\", \"modules/parallel.py\": \"y3ZBLQp3FeDfBlHYmSerllqbfE3RgzX4k26lA15DPeg=\", \"modules/rotary.py\": \"qVsb20GcFf9RolZ3dChWzEi5S9rc5UaMdC3dlrhNUj4=\", \"modules/token_shift.py\": \"IWlvUPZ/Zm4IKW0dWSsx4p4r+ovbpPHQhk5Dp09P5Wg=\", \"modules/token_shift_cp.py\": \"Zvaa6d/GiuljKqNgLdkjX0vysktpIVV8KMSTOjdG3Hw=\", \"ops/__init__.py\": \"PsKzHYHoje01DfrVdltffiZFdS5CTVps5xl9dXr2RHo=\", \"ops/abc/__init__.py\": \"WwLiIkYi3xJ5RiG/bOCNNRaeeqmMuIPT6n1g23qfpDg=\", \"ops/abc/chunk.py\": \"sqvLGP2r+frjpL2qWK8GHCoWWPU5Df8IT5y20oaTZTE=\", \"ops/abc/naive.py\": \"AZ3uz9eDvycW3gTwZuv9J4k86KndfQMZiLBFyPmzsLw=\", \"ops/attn/__init__.py\": \"gU/67mJonbeXpzfxgi8K7HIG2a8Xpjd0gOuCk/Pu9EI=\", \"ops/attn/backends/__init__.py\": \"3xcuWH+iLBPRb3g4ZkyXBXm8wJFxQK4GHdUpmK8Nh88=\", \"ops/attn/decoding.py\": \"ScKiTKcbl4kcnYDNz6jXd2a1qB5ymDcz8YVkotRnO9Y=\", \"ops/attn/naive.py\": \"nBsWqmBWOMQdaQYvdFejDLoX0Pei9W8oMPrHZoCCin0=\", \"ops/attn/parallel.py\": \"+Vkkjy4OIwR+7SXBf6fCJqrPg740qc6a1+21RSNt9Cs=\", \"ops/attnres/__init__.py\": \"/ljBk1VNFjDa9XABPXqIiQ05vUdzRV6Dbx/KkQihrWs=\", \"ops/attnres/fused.py\": \"Q8RKiwlUtFZkHELCLV3wtQGf1cVDPoDNMK1waEwbxFQ=\", \"ops/attnres/naive.py\": \"nV4WPz/vfRwfRsIzF7pKV95fEx2dQP4BrrPoQCh0a0M=\", \"ops/backends/__init__.py\": \"3DU4e6t7dmPuZLlHjPnt4q/MAtDXtaMmAcSY4ycyytY=\", \"ops/based/__init__.py\": \"qdBLUigpgjQaIN3HTtq57uxoqAaBnQkZbFiEIf18Rvk=\", \"ops/based/fused_chunk.py\": \"Evgk49vwK6VxWWmw3KdwhiUV5N8RF/PcxZP8J1dlYR8=\", \"ops/based/naive.py\": \"YWIFSLeslp2ruyQDz/uCr5V4ao2cyRyeQH1wiVLMB8U=\", \"ops/based/parallel.py\": \"7hNqqI2UIeJNebDTF7RwW+Q9ST15DwMxJugiaVO9s/k=\", \"ops/comba/__init__.py\": \"FBKonbvPPFHY7an2Auh1sXVJLbcgwX8aAD5fxi2oecY=\", \"ops/comba/chunk.py\": \"o+3soCUQ27uZXe+YOZpYF1/aiLFEyTdbb+bmetY6O2c=\", \"ops/comba/fused_recurrent.py\": \"ujg1r9D2Jx+/sgli1msfkXoiCZb2gX9dL/OpOca3kGs=\", \"ops/comba/naive.py\": \"QH967c5rxlSSDs6J6jRtLjZ3iLiwgAYgY9+0m9rgD18=\", \"ops/comba/utils.py\": \"rcW3h8gjoEzSoLgY1HkrIwsn9XKEYtz274CGqr8wWzU=\", \"ops/comba/wy_fast.py\": \"EsJfyG3HDGY9rgJ97cn2SAq1DeqnXdgj5mzdOlWtz2I=\", \"ops/common/__init__.py\": \"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\", \"ops/common/backends/__init__.py\": \"aEhY8S2W0I6qbjedaCYjqLt4VaNumWM+bjKtPEJSAN0=\", \"ops/common/backends/intracard.py\": \"yXACesLmdhG1PwAFJuquz4F+hqSNtFvXwZ51YeEN8FM=\", \"ops/common/backends/tilelang/__init__.py\": \"2Zz/LkJfy8oOvqUcen6iQDMcf2prznZpYhHAc5QYW3E=\", \"ops/common/backends/tilelang/chunk_bwd.py\": \"5zXyBzqIXRgoZdZ8zjLNEIz3jBksHpaVxnqUk66ckjQ=\", \"ops/common/backends/tilelang/parallel_attn_bwd.py\": \"w+KjVu0voRjcFhmwWfIEYaSwmlk17oIu9EKRvjNIAro=\", \"ops/common/backends/tilelang/parallel_attn_fwd.py\": \"7INMyGs1d3H8BKcjRnMvu/NHMm9VeNFTETR5z7ZO15c=\", \"ops/common/chunk_delta_h.py\": \"QmkSsbbyOHai9cVaMB8O/8ep4NxiM6ieUVKmja6USw8=\", \"ops/common/chunk_h.py\": \"imyz71p9AD6nOtStpN+zzgE0yVbGnq4DO3FitrO3hvc=\", \"ops/common/chunk_h_parallel.py\": \"YGNR5a+eC7UShlVAvQF3fSLK+HXoP2Nc06H3p/PyzVg=\", \"ops/common/chunk_h_split.py\": \"zYoWf1Li3Q7MFPusp5BRf1F+OuGzxxTeiZ3hdunYnCY=\", \"ops/common/chunk_o.py\": \"1yUHQ+B2J1PQpxTFEa8R6JxpyV1k/TNXiXkOvFRfQAo=\", \"ops/common/chunk_scaled_dot_kkt.py\": \"MyoKTPKUUZlOzdC4FdP4etL6pPBGzaNL5DJQyH3603E=\", \"ops/common/fused_chunk.py\": \"nKIxBC8UD00KuY7WGFysC8P4ELNLEJhHmT60VcqyHbc=\", \"ops/common/fused_recurrent.py\": \"RnQdVD59iOcRa8sSK4XcQT59RhZJr42YplDaQrDt97o=\", \"ops/common/gate.py\": \"ExEV4w/h/y44Qb6L1cwOFEsMutGjs/t338KimPVjeHM=\", \"ops/common/intracard_cp.py\": \"R+wNrYC2m0gUn0jr5CpsxpCIVRCRkRnFXjBus9XbDE8=\", \"ops/cp/__init__.py\": \"uud2WkodJvH5U5DjBa5oSLJtZ1G8O4D4XEuspXyC9lA=\", \"ops/cp/chunk_delta_h.py\": \"+pPn7+hNImlTrCZLHNpaJKabA+OaoNXofYbX2F4fTD0=\", \"ops/cp/comm.py\": \"lqyQDwmK19vowTtGJGO+6SEn/neFFE0G8xFvlxLOmb0=\", \"ops/cp/context.py\": \"N/p87Th0z6m2cGhP6icCN7rEg3QPVua8ymP8oDD4qy0=\", \"ops/delta_rule/__init__.py\": \"1gIkBajhtbVwuJOgPQ+FYYdq4tYgNgib+veOnont+N4=\", \"ops/delta_rule/chunk.py\": \"r1b6g3/4OO1oDZ8n/MMyzagYHs0c5FPKU8//7KskU8w=\", \"ops/delta_rule/fused_chunk.py\": \"2NiUBRAl98YgRVGr2uzYJV22pQW3WNOe6euTX1Mdqyw=\", \"ops/delta_rule/fused_recurrent.py\": \"aerY1sPJ0y6IknruBVOwbu3v/pLz2PjP3aNEzsArp5M=\", \"ops/delta_rule/naive.py\": \"IK4DL04IAZtCmMyfzyw5fYcfqsD9HxgCQ9n2makZKWg=\", \"ops/delta_rule/parallel.py\": \"GMhpAZoEDuzyIjK0Qcpu+ku528WnLgDUujcsoRnXU6o=\", \"ops/delta_rule/wy_fast.py\": \"O0UuKiOw3mImzRQHFLKHifSewFAoqRJ9i9r0puiX9fw=\", \"ops/deltaformer/__init__.py\": \"51ZmNFoHy3P0lVn/2EHKu1QS2BMC6h+hnAwSIr9szYg=\", \"ops/deltaformer/invcum.py\": \"ren181AxlHBv2MoZIHmSGMmJ0sW6HDb3t8fqG7gDELU=\", \"ops/deltaformer/naive.py\": \"8b88rviKkDZpW+F9GwgEkVkwuSioECwgRJX//CVksnI=\", \"ops/deltaformer/parallel.py\": \"sDHrnr2fM4+0T2cyAJoI2VP9Lan3NmaaDxk9JLtyLWk=\", \"ops/dsa/__init__.py\": \"ZNyws889LPBiY8gwB5zTs2vQwJYV8bX5jg6Cldkkq9s=\", \"ops/dsa/naive.py\": \"lKgrdKOoE/qCdF4DtrI0uEkRdB28kUYbtn8hO63fzyo=\", \"ops/forgetting_attn/__init__.py\": \"A6ozg9zdEsz4lgUAXqEIUY8CeNp+5IZqYKOpChpj/A4=\", \"ops/forgetting_attn/naive.py\": \"RDPXw01ZnhTMV125OFvEVeDDMht3BYj5gQI4oaT+T1M=\", \"ops/forgetting_attn/parallel.py\": \"fcKF7Q84XXmeeKI2Tpv5XIfmxFovuXlmBov7Ie8OjKg=\", \"ops/gated_delta_product/__init__.py\": \"0MAzYdxP0ODZjN4WNQ+3HLwigokyfMv15rXUpTX+qnw=\", \"ops/gated_delta_product/chunk.py\": \"QNHYG+1YKzot3cQ2oWvzuv7nDoZjllEXEomCk11WUJM=\", \"ops/gated_delta_product/chunk_deltaproduct_h.py\": \"5IvD8ZZxaN216Wj8dop1cwJE9P5rvZ+Si98qB6kC5DQ=\", \"ops/gated_delta_product/chunk_deltaproduct_o.py\": \"nvMmsV+E9AG4Z9HA6UV69DdGMUYH2XcL8NAAubUtIHc=\", \"ops/gated_delta_product/chunk_ref.py\": \"R1dHdPy4rU+lTQQKodAn9h2xPLxmwI2z0T6pRvh8Llo=\", \"ops/gated_delta_product/naive.py\": \"Q907vtcavFpalFlttThkWSb/SaTa4vqAG+I/nWvKDno=\", \"ops/gated_delta_rule/__init__.py\": \"Xt0hhHr3CECyZDmBIZakdufk3bvvIa/V/iBmpkYwpnw=\", \"ops/gated_delta_rule/chunk.py\": \"DFEZWmp016p+65pnDynAMVOY+NsUTGOfVcXsAhQr1i4=\", \"ops/gated_delta_rule/chunk_fwd.py\": \"NCMKqzu9uM2yAGhvVqENRtoVLwoxVo/KaVChkvIJIDE=\", \"ops/gated_delta_rule/fused_recurrent.py\": \"M7x3/U1Xnf5mndUc+lvGpzxu4KDNc2Sfevv+RVZZFNk=\", \"ops/gated_delta_rule/gate.py\": \"H9JLPKjgZmorhyV+1IJFSMIa6x9admDn+EXXlwg167g=\", \"ops/gated_delta_rule/naive.py\": \"0c8XmSNJ/T6Ur5mbIuPTqBvkotGIHOW3CjRXJXFm4Ms=\", \"ops/gated_delta_rule/wy_fast.py\": \"kFbW7BX1I4DBBBhfV1yXGQR4Jb9tGM6yILNmTXNOhxo=\", \"ops/gated_oja_rule/__init__.py\": \"oShC/cL0jMy+xWR7YBV9QxkAdxt1xasXDCypGAU6Hgo=\", \"ops/gated_oja_rule/chunk.py\": \"lq+5BXEaJLfL4dqqcJb4TmtyF9OrP9Wh+JpRfpdzd2s=\", \"ops/gated_oja_rule/chunk_h.py\": \"kr6KBcPbFRrIQFBoQjmt1wsyvO1pyLeGW5v/k+NI87Q=\", \"ops/gated_oja_rule/chunk_kkt.py\": \"N/sU3E2i5+jQBXnFuWyaUAiQkAgWUxNjO9lxdlpEkDA=\", \"ops/gated_oja_rule/chunk_o.py\": \"4tPVh8KWj+D2onfXbIhnhaGWq35az5uJUwxTUbbRll0=\", \"ops/gated_oja_rule/fused_recurrent.py\": \"yPfAcIXWBlr50lvK59bbF2qkhKWt40eT+EXx6exojK0=\", \"ops/gated_oja_rule/wy_fast.py\": \"mS9GSN2RVUbEMkz2o1Hfi6j0nOhXtjLLSIccXkwmW3c=\", \"ops/gdn2/__init__.py\": \"xiEsgvVEfHhKcurQqL7ZKGGzEBW2BtGAylE9vxoNmAk=\", \"ops/gdn2/chunk.py\": \"zgJK/Mwhn1fA9PpvagLdy6yFuxo2c1Z8DmUY5FJp2kw=\", \"ops/gdn2/chunk_bwd.py\": \"Ay8kHSsnyD1wxGE1YcEfV3d4L3yae/8bDBMReKPbVBw=\", \"ops/gdn2/chunk_fwd.py\": \"7Z0d9SnKSby4yCAeXx5kKx6HIdYfaXl0ZhYDDAniClU=\", \"ops/gdn2/chunk_intra.py\": \"UjnmvfEg9EB41jGA9YHcZT9R2oHpBQI4PCq1Dwj1ZiQ=\", \"ops/gdn2/chunk_intra_token_parallel.py\": \"U1lf9FZ6mfW2iIm06YJ5qPX8IQeT4U/G+J7RlZoWutw=\", \"ops/gdn2/fused_recurrent.py\": \"3QsJl80MRQYrQXVN9lmgw4cVD1hLHrQXg6xcIgU5Bz8=\", \"ops/gdn2/naive.py\": \"amWAVAHrMA34W2KXYRoN0VjdGDQjzyvNXg8Ozd4+nno=\", \"ops/gdn2/wy_fast.py\": \"DNH9FhRaZl4nqZ/YrxH2SqCgZdC77bkJ24sFIemnkRM=\", \"ops/generalized_delta_rule/__init__.py\": \"cn6rKWEDrxWw428Dk6EEy4Y7nyWHpc8rtR+EbRO9ndA=\", \"ops/generalized_delta_rule/dplr/__init__.py\": \"F8TbaiZeRKjbKhlI4XYopNd4bfzV10feNO06i32h2Vo=\", \"ops/generalized_delta_rule/dplr/chunk.py\": \"qeR4srXoGT8NjNx93IQEyPGq3sqsK78CdOovbRwbntU=\", \"ops/generalized_delta_rule/dplr/chunk_A_bwd.py\": \"MDoA0HOWDti16rAh8Q4D4RJonJkmIN04dCwUsHOM+sk=\", \"ops/generalized_delta_rule/dplr/chunk_A_fwd.py\": \"wQSOE/PoqvjP6ugh3wSmbsst0ECSclxJEl5x/4NQ0KI=\", \"ops/generalized_delta_rule/dplr/chunk_h_bwd.py\": \"hAISrlVF9QETkcoDAgEKXRY0w9DSDKdohqTXfkg421E=\", \"ops/generalized_delta_rule/dplr/chunk_h_fwd.py\": \"vWtEs8L4DXX52UF5qt6Vuu/pOsHzKOFOIFtyezheWPY=\", \"ops/generalized_delta_rule/dplr/chunk_o_bwd.py\": \"CuHt6fYI2g/6m0k2mj7JSLhCQ+zcKrMUYc2LOmKuUUs=\", \"ops/generalized_delta_rule/dplr/chunk_o_fwd.py\": \"KOF8wWIEMIyhDfSL44bucPPsCp6u3AdYPlRDKK10KyQ=\", \"ops/generalized_delta_rule/dplr/fused_recurrent.py\": \"ABaz+l4n77U9FrE3bdsGx/5jexAnvJ1cJcI/XJkeIac=\", \"ops/generalized_delta_rule/dplr/naive.py\": \"4flLSZUtwaq5S/PH+fu04rzOM2+USdRX6Ofte4lanE8=\", \"ops/generalized_delta_rule/dplr/wy_fast_bwd.py\": \"HiMBn/U+a0vSCOVmn29UYLylI5x26qqualdl4E6ipd0=\", \"ops/generalized_delta_rule/dplr/wy_fast_fwd.py\": \"R+CamNa7b49LfvrNZQs4roi+TReWcLGvBcoT3DbhoLM=\", \"ops/generalized_delta_rule/iplr/__init__.py\": \"6Vg8MTc+Byrnmx3HJz2yySi9nk2kyKCSg7aL4CMJ+GA=\", \"ops/generalized_delta_rule/iplr/chunk.py\": \"BsCf/fiYn3wpS0eDPrR+mCrqsAihXD5v/QD2QkA5ATc=\", \"ops/generalized_delta_rule/iplr/fused_recurrent.py\": \"nNo+ww/QmydOqBLnpmxXHAbANGDPTeWGjFI7nA9Vrw0=\", \"ops/generalized_delta_rule/iplr/naive.py\": \"YotccLOueXwBcQys4ICmFAysSrX8fj9eRasXIpmpRMo=\", \"ops/generalized_delta_rule/iplr/wy_fast.py\": \"SoTcF2asZEIAnZS1qR9PXHGkHwnBspjuUsz6RpuqNiU=\", \"ops/gla/__init__.py\": \"PTUqqQlC4cXrhRhG/KRx+7X3m9WJKxGyzrIB/WJEXSo=\", \"ops/gla/chunk.py\": \"B7reIP0UzTvYgK8Ds50r0uABlaucJWm70JVKKdYe1L0=\", \"ops/gla/fused_chunk.py\": \"OjzKcjSQujVQ+Q+d1Lmg4tsTzZaK6xWs8AGuplRn5zo=\", \"ops/gla/fused_recurrent.py\": \"ZIzMstFj8WAXagDzTlZo3hFZy0k+egHNg8Qr61sb4vw=\", \"ops/gla/naive.py\": \"rEuH5bEAieya1CTvtZbebVFo2J5LdOX1ztL1WiDkZB0=\", \"ops/gsa/__init__.py\": \"9uygbV6orNtaTkZl9Hz+aAp7EvT6RuffawfeFtuUNEE=\", \"ops/gsa/chunk.py\": \"SsfwmTOpKRG2Fja/lArJkw1teaomk/Vgczjr2/Oa+l0=\", \"ops/gsa/fused_recurrent.py\": \"K7qBWOmh0uL9CO7D3pSlrxKFHy1fobTUyTFV5p7okXg=\", \"ops/gsa/naive.py\": \"rezNszsU38KD1iHBW+ErV/Z01T5LIPadEjJnWiXz9LI=\", \"ops/hgrn/__init__.py\": \"69DMv7FQYvobQTXqOFtu7muAt1k1k9nvsFXcMAmjQmg=\", \"ops/hgrn/chunk.py\": \"Br3GeHkw1EcOF/4X2BOvUTclhfLDZwkthIshoHTMMqg=\", \"ops/hgrn/fused_recurrent.py\": \"KvO/5l/3wnJiT0jT0UA9IYxQhGHJy8jC7lYaOOyLM1w=\", \"ops/hgrn/naive.py\": \"XKo+5zJ+G4elkgK5ARsoXm5WYkG1QidTKNIuPT4k588=\", \"ops/kda/__init__.py\": \"JFZPAQH4eiYFbpBh7Xccrw2PbZoAtNve1wHqdSW0Wss=\", \"ops/kda/backends/__init__.py\": \"pk1xLku49AblKggFmQjmGlr1oNqUgdzxggzzgx8yeZk=\", \"ops/kda/backends/flashkda.py\": \"g63Eq+K84JInsin5NVb428RIRPhL3wH+6Y4a+OHSFqk=\", \"ops/kda/backends/tilelang/__init__.py\": \"Y+1//U4pzuPg2mbHoCymDfs186j482cI85ZOPxi88E0=\", \"ops/kda/backends/tilelang/chunk_bwd_dqkg.py\": \"Fk1eT3M/KPFvfVRrJQ6C0158h5GaR72YK3tgSxkKoUo=\", \"ops/kda/chunk.py\": \"LnoIH4MI8gHR8613fOKLqJGVNQkbtzjEJ0R7qX8/kQE=\", \"ops/kda/chunk_bwd.py\": \"AahkP3AepxWsoyGCZHlwUGc7rGIHJh68Im5r/Zs3MK0=\", \"ops/kda/chunk_fwd.py\": \"wUTWWQVWLRGeDj9e7dO03+0IosaRuWAfYqsl2KBy0ZA=\", \"ops/kda/chunk_intra.py\": \"Ao7C9D/HzYJkiFxIL5s/LIlVE2YNgpL9yASJl5giPOs=\", \"ops/kda/chunk_intra_token_parallel.py\": \"ENjjhDAR0cK2mqoU4q7QpBMPHmICgoLO06e4dEnd5hY=\", \"ops/kda/fused_recurrent.py\": \"r6ZJMiLVmCRLpbYXS25mIX58KU2yKtDJqGwwHTXY0MY=\", \"ops/kda/gate.py\": \"5056ezuomW2CNvPE04MraGJtf0gHvGqicxin1H0DICg=\", \"ops/kda/naive.py\": \"YKMihdS2cGj/YztIu+irMQKAZtJPANJ+EhmaiPxz8BY=\", \"ops/kda/wy_fast.py\": \"9pMMqS5E/l0mFV/Tyap1QKY39CB5Iy94/Yn4s9WzjUw=\", \"ops/lightning_attn/__init__.py\": \"FPVVYNLjfO3GJQYIp+4HCQ4MdJtF8UZx5yktWDIatFA=\", \"ops/lightning_attn/chunk.py\": \"kFjfxpUOVj61TnH0vXWZhDnw318suRLhtT2Qo50pkKM=\", \"ops/lightning_attn/fused_recurrent.py\": \"SsJ+HC5opio7H9LsPWyrbnPOoK2EvOcxLuaq8Vp69GY=\", \"ops/linear_attn/__init__.py\": \"3OeyduLmyi1manyo7FQz1ZLSoLgEXAKbHKn1uqDcK90=\", \"ops/linear_attn/chunk.py\": \"5xqgOnPPA7nGPt/Rda4wOxSljFTD3Izw63VpuDLJNd8=\", \"ops/linear_attn/fused_chunk.py\": \"MD6FycgZSdn8jV88UDvxpioPAw6hCxvsSq49qNIKpmo=\", \"ops/linear_attn/fused_recurrent.py\": \"jUZ5gPuN2VngqbebHbN0lrIAOiZOYkxIku+C3Eh/9Vw=\", \"ops/linear_attn/naive.py\": \"46BX2exbemO1c8XXVhmkz2m6H1ywTmrvT4/odStEA8g=\", \"ops/linear_attn/utils.py\": \"7X94oxSkHAGSpk7SQ5izs5Q0rYEDZZzUV/RorFdzY1o=\", \"ops/log_linear_attn/__init__.py\": \"qsAhfXSfoQBDmP6Li6+CjNd9ysMDGjcbYLonvcZcrjU=\", \"ops/log_linear_attn/chunk.py\": \"NTaU1ErT6E0PzSt9JL9KayX8dQgLG++85PFwj3sRm1Q=\", \"ops/log_linear_attn/naive.py\": \"xmXXuoIdEkTucVYJ/s4dTCvMWuJuO8KP0299J4jdtEU=\", \"ops/mesa_net/__init__.py\": \"32w1RDjxggXJ9JobAR01dDnN2UZSG2Fui7qePyQT2J4=\", \"ops/mesa_net/chunk.py\": \"GTupTJ0BI3Ix2giVi7sMA2ocs71yvZ4uuKvf8rkUqKQ=\", \"ops/mesa_net/chunk_cg_solver_bwd.py\": \"MvXMHU8MSOTNG62zURV+iMpvkwEh4eCo7epde0DIvBc=\", \"ops/mesa_net/chunk_cg_solver_fwd.py\": \"KG4SXzD6dZomzRmYmqaWtmBoYVgSk6Fxda8uXjJc5go=\", \"ops/mesa_net/chunk_h_fwd.py\": \"F3AUgFAYjqUAxslqpjsv+zW1PjdxGnwaU/Qjh5tT0iw=\", \"ops/mesa_net/chunk_h_kk_intra_bwd.py\": \"17Le7w0rK0MrLUROFQqcZ9yCQfxpRYMhe5o3dRHGIfo=\", \"ops/mesa_net/chunk_h_kv_intra_bwd.py\": \"mQnvHOYVu3HMX6IA4rD2zl+9w5BOi2yzFsr0GSo5+Nw=\", \"ops/mesa_net/chunk_h_kv_intra_bwd_separate.py\": \"FOrwfCVxiMtLYaR9JIBqzxExwDWMWPVuOkaxgHD1AgY=\", \"ops/mesa_net/decoding_one_step.py\": \"ZFuKB5H06F+uDagQLPGiu+Qk/qpZxjRbKcnuqWtC6/0=\", \"ops/mesa_net/naive.py\": \"zv3jT+71UegNb0JyIKnPv8OddyzHu4weEETtt0nJvzA=\", \"ops/moba/__init__.py\": \"P7ARNbLLMsmTtxcxPk09NPmjcvHGwWCmooXPYvT6ANk=\", \"ops/moba/parallel.py\": \"8qUN2zo88Pldh809UyDowBVj8kCNplsS00fIxLRdSyQ=\", \"ops/nsa/__init__.py\": \"6Mw2zDl4Z74QXVjME1d88PMSKTSO/AYUa00lW/IK+eI=\", \"ops/nsa/compression.py\": \"XjFqvEXvuIEeCBrJU+YzhWRH5UAkPGcUX4Tz/xx2M6Y=\", \"ops/nsa/naive.py\": \"5A7lyoN39oK0Wc+Yzm/dQbNEtlaGmZfJsMDv8II+m7c=\", \"ops/nsa/parallel.py\": \"BLaPXXsO8tcAJ79ltV3xwX/1qTganF2Nh+Lto/3zvyQ=\", \"ops/nsa/utils.py\": \"lbhybLC0CqXTn6liY8d1sQfTdZ2Gl+++Y5Go53OX4xE=\", \"ops/parallax/__init__.py\": \"g2pTOybF7cyoyaMAku1gpjV5MBY6s/Ll1X2NT6/w/YM=\", \"ops/parallax/decode.py\": \"qHX0Le4hA66S2LLTcMa+p0VMB0uWvhYGI9urSPLrB4I=\", \"ops/parallax/naive.py\": \"XEvAU0cSJtunA3ElSy4GFs6idarjK7Vb+xkrDKSp2OQ=\", \"ops/parallax/parallel.py\": \"ZrLKoopSj60DSxmqbaS3MIf3AUyEpYh7evJPlTUN+AQ=\", \"ops/path_attn/__init__.py\": \"eyvdV5LkkxztzDTDYAl862vhXITUOcMtF6D8n6n0O/E=\", \"ops/path_attn/cumprod_householder_bwd.py\": \"EZ0t+c2hG8Z/0IvrVxMBLDgO7zLgJsI9Bc7L0WYgvh4=\", \"ops/path_attn/cumprod_householder_fwd.py\": \"UF1wvSIMRHeJmPf5qbFuxbC+qCm3ipAfeAVf3IEOA6A=\", \"ops/path_attn/intra_chunk_preprocess_bwd.py\": \"HMQYfpKCHEMmzomrzb60u3gJK419yOAg2kx9XolFf6U=\", \"ops/path_attn/intra_chunk_preprocess_bwd_prepare.py\": \"6XIZztbrFYFR/7XJSIy10RxKid3+6dcZ5c+A6XL2fBs=\", \"ops/path_attn/intra_chunk_preprocess_fwd.py\": \"U8P46fLq//0vDN0SiE3cwI4n6FbAO6/UGNhfOiXegRo=\", \"ops/path_attn/naive.py\": \"4QsKiZUcF0q4IJbrku4Xu/IR3YBg+n6Epio7FAOW9lk=\", \"ops/path_attn/parallel.py\": \"V1c/T2VKbs8MgNJ0AT2JA5ULpx49aLb5maoxizAbVjk=\", \"ops/path_attn/parallel_path_bwd_inter_dkv.py\": \"6/EOBq9NQdKaCrEGwPwbi69vKbOoNCsKU1q2vRv7YFc=\", \"ops/path_attn/parallel_path_bwd_inter_dqh.py\": \"fp1NEXRSVAqhkmGcvoNfQn2pt5dtD0plx6W0TGR2xDw=\", \"ops/path_attn/parallel_path_bwd_intra.py\": \"+3QE/gzK3fAYqgo/WNHNC5LV8NJrL4+UHjDN6wOd15w=\", \"ops/path_attn/parallel_path_fwd.py\": \"cx6fGpfZmEuxHhl81gsLOBAYa61ZnkI9usqTakOIV7A=\", \"ops/path_attn/prepare_k_cache.py\": \"LqEoXyDlVfIaJQhrmpoS3pmetIaavAm+SmIm1NKFohQ=\", \"ops/path_attn/transform_q.py\": \"uZ9u6JDzXFKkWiim4KUkXWoAHYKlSDK5L1fMBNFrEGY=\", \"ops/rebased/__init__.py\": \"pawYkzOJ/mQY5Qj0Ibuq81P3KNgO9Lv6swOxCjlDlGs=\", \"ops/rebased/naive.py\": \"XOrMn2Ohd7MDJ7QvP93dPfjv/6prnZW/ozxHtU0KqWQ=\", \"ops/rebased/parallel.py\": \"+3WRG3oxV0T78e8HWkN32Q8KBe0V2GMQ/OpxowWfXFI=\", \"ops/retention/__init__.py\": \"i6uHA1ndTR6T/fVfooceKo12wyBFGYLe1EAm0Mo/sg0=\", \"ops/retention/chunk.py\": \"x0fX3U8KTjr9WLQK9+2C6Mn7cYNtACQ8RhFuUoCGpBw=\", \"ops/retention/fused_chunk.py\": \"sAmIqFiH4IFM4yiM1G/pNvlsZxLtkORemYy5WW4i1pw=\", \"ops/retention/fused_recurrent.py\": \"beES/zDbxCUWWWL9HSCc72a1+DWVvDKpBIsjKjkUet0=\", \"ops/retention/naive.py\": \"MG107SmOiRKLTZ8ziqaWN85nbgIPj/GqNJJ7KMt5Tag=\", \"ops/retention/parallel.py\": \"gTnLcV5w17fZAOJyJttw52LGAe9XlkuS++lMGTZ3vRs=\", \"ops/rwkv4/__init__.py\": \"GnWakdtZiQJ0+fTYxqqIyosoPwjH6Yp8P1AbpHIDnts=\", \"ops/rwkv4/fused_recurrent.py\": \"0fvq/4+NZMq6tzq7oHMUCaPg10qOzteSKLj5cmQKhvk=\", \"ops/rwkv6/__init__.py\": \"wPYgC6wG+xc4I2vessGhv1EaZ4tL5yuVQVSwi1rEEUk=\", \"ops/rwkv6/chunk.py\": \"2VMAk6p0tKEudhieXLIg2bYg+89JbsGUiuhFpfvx6C8=\", \"ops/rwkv6/chunk_naive.py\": \"zyj0Og15jGxNMzmlD9FoEdf/odzu3tqio/jiceVMNk4=\", \"ops/rwkv6/fused_recurrent.py\": \"wMTP/Y17ayzQXxXw+fN8P/FB5KGefLB4bB0wJ9kDg6Q=\", \"ops/rwkv6/recurrent_naive.py\": \"/lCgua1vSaJDqA4tOWWUaVxol5Axi3cOcjI+mJj7OAM=\", \"ops/rwkv7/__init__.py\": \"dPKBISLNnwlKb+xp/8ejsc2peC9gKQ3NedtMT5wQ1sE=\", \"ops/rwkv7/channel_mixing.py\": \"+XrwuE2RjLxjsiKrdhssskBTvW/zL9RpyFp85uv5J5A=\", \"ops/rwkv7/chunk.py\": \"9+rVTjACj0FP2Mnwo30DHWIHkpZG6YfYN4gE6891Oa0=\", \"ops/rwkv7/fused_addcmul.py\": \"uUzh8wc75jBLJhCagQfeE/yor25Jw34d9kQQNsQWg04=\", \"ops/rwkv7/fused_k_update.py\": \"CETn2jde9U8K8kfVihcyjARgpcDT9nN09qw9wM1QQac=\", \"ops/rwkv7/fused_recurrent.py\": \"nnNrjgLS5nv9plvU/MuMjt4/vDcGD0Wax9Dfigvwmp8=\", \"ops/rwkv7/gate_output_correction.py\": \"Ah6eqJrlTgFGaGI711+pMmWlxCOpvHrExx8H9U+nO0Q=\", \"ops/simple_gla/__init__.py\": \"sSyIh8oSfhyZI+VnYUM/uhIp+HL+gDcQBReLn/nJ5OQ=\", \"ops/simple_gla/chunk.py\": \"eA/L+T+42GiIhYu1oG0fM66QFGnzW9Uz8oc2SnLTKig=\", \"ops/simple_gla/fused_chunk.py\": \"eCALWbi61vaG6zPewlPmATvjlidM9lso9xQC8H4xAlM=\", \"ops/simple_gla/fused_recurrent.py\": \"Ab98sk1dnnFQmBmueO3D95vUs0zK8PC30ZRJYEGaIOM=\", \"ops/simple_gla/naive.py\": \"g3fAN++vd0aWvZcdOW7Y0boMYcs2mOld8kePWRbl2R0=\", \"ops/simple_gla/parallel.py\": \"hB6Zq+allqAYg/H8/9kpk0l7bsZCK9IsITkfLIhqZQ8=\", \"ops/titans/__init__.py\": \"4t9OK1aYdW03I+sUlfUjj3ALTez1M/XFD/H6KzeZtGc=\", \"ops/titans/log_impl.py\": \"Y5tMWJgtVE+GX394DdxQHd6Yirrg3sLx6sinMdQvkAE=\", \"ops/titans/naive.py\": \"NUmchQQpsxFwNaEpSQbwZ/638zSr0tuy2xGa3DD07+A=\", \"ops/ttt/__init__.py\": \"cFaLRxAWRsKjcmXh01bJbh5U59ZaFaM7DwYgm/KBAbo=\", \"ops/ttt/chunk.py\": \"xk4Cw5LLMUKTauseXa+oybDIOp6A0e+McU/vqzp3KhM=\", \"ops/ttt/fused_chunk.py\": \"KDdTpBvHj3jcIm2EkkNZTxWkhGbf0qvSQYEFkTwf+d4=\", \"ops/ttt/naive.py\": \"IaJu/Zd1/PgFA5Bnbo9WQkpdz6BPZD0bl8iGKkWQlCo=\", \"ops/utils/__init__.py\": \"eUiV7OAFYzGDyI/WtrSNltVrfU3crATGfKFWo9U87Hc=\", \"ops/utils/backends/__init__.py\": \"Bfq8p7M9iRlUzfIfPTlvsKd/LMutWWtEzp2wfwOOK54=\", \"ops/utils/backends/triton_ascend/__init__.py\": \"rpIPSLMvhpuf3aqxxDUGQrrq6dKKF5Nk2qsJl+H34Lc=\", \"ops/utils/backends/triton_ascend/cumsum.py\": \"AOxEn57vvwiNwOaDcVK3KbP+n5IUGrsbUWkG+kkukBg=\", \"ops/utils/cache.py\": \"pksJ/9P1Gu1UetclWd7pTLmur9Kl8CxsjmCm4CAUepw=\", \"ops/utils/constant.py\": \"uVK9zwOd7kM/DPSQk8cllx5nkYeK0K/KZVyCu0ZFdPg=\", \"ops/utils/csr.py\": \"comXJRo/nULFkkZk556qHNxBfWeXk0EofLnQ69EIEjw=\", \"ops/utils/cumsum.py\": \"6oQ1YDSIgMFZOZRn2oX8VKy/O+B5mbVWXl6146frCmY=\", \"ops/utils/index.py\": \"BdattFUI0BkVExltE0Zxl/BNO9Ldp6hSUfU1zbM3710=\", \"ops/utils/logcumsumexp.py\": \"7uEgeqUuLxi06jN/hOcTHvqJEITDGXECjNzk5SKPce0=\", \"ops/utils/logsumexp.py\": \"7g4hdIjRKkO8CylqAs80XR02A5PyIWYxrKcc79qRcy4=\", \"ops/utils/matmul.py\": \"TOLhNlPSm2JJeFmVsgh5D3t9LPUjw30w+mq5TIHef5Y=\", \"ops/utils/op.py\": \"nFuDfGU88dXF1Pe8xrcxoda8QWZA5QTojiFsse/53fQ=\", \"ops/utils/pack.py\": \"XT3/YxB71p6VO9oXPkpD0te42kbwU0dFaG3aZawdBHQ=\", \"ops/utils/pooling.py\": \"LB2lncX1ThcjDIEWvMwiQpW2T8KE/AQ5dTqcJC/hNhs=\", \"ops/utils/softmax.py\": \"uq/rygFZaAImpnHgOmAN9D+jrq/m3WHTyu6QGQR/EoU=\", \"ops/utils/softplus.py\": \"tdlxnzZRHWEZWhVl9uFVl/EGQ6phOBMEEwlbCtu8jz0=\", \"ops/utils/solve_tril.py\": \"oy0zat1/r4IjvqQ0MkJbrn1MYoayluYORr3nvX7z9NE=\", \"ops/wall_attn/__init__.py\": \"r/FbDGjGO8WK1DaMbl9axWHpENUa3pzSc0v9qviHJ6I=\", \"ops/wall_attn/decode.py\": \"JphI1kWj0Wwu024gnwgUWrWmhkAnKloXi1ik6cDpRrY=\", \"ops/wall_attn/naive.py\": \"9YKwBSvQ9imy229T5KMYKpuVNb+xEzhXsXdMemRWqjQ=\", \"ops/wall_attn/parallel.py\": \"oa2UJtSi8ouSG8g6bUWHwOehbwLH74SSHIU8LUiwVrg=\", \"symbols.json\": \"0pgr+/ByS6ju3XG9D6VWYAcRncaie27x08XB4GIIXKQ=\", \"utils/__init__.py\": \"bdtrr5b2e7dzcO88Il6bH72LypiM103tHkbY2kPoaeE=\", \"utils/_compat.py\": \"kYAtqK4JdTczM1FpqT44T/mILN7DcnPb8C4uPnO4Ho0=\", \"utils/_config.py\": \"l1PBnf2C6SABltOAhs9GB0GTr0olQ1fA7d/bhzTb6IA=\", \"utils/_decorators.py\": \"8OxDii2b+D+deTCQLPK1sdFx7McS/Wi9+AO67mlLrYg=\", \"utils/_device.py\": \"yXcM5ZkBLCOvHl/Dh25SveTgbSemR6PkFAl/UabLYWE=\", \"utils/_testing.py\": \"eFchc/74QJDXWv5T1YmIZFzRRpFWh+3gaYpQ1doztzs=\", \"utils/ascend_ub_manager.py\": \"TcjVL6L7YiNwsa7YZ4+9KrIPQ2RmG7PJCfmXYc24uEc=\", \"utils/layers.py\": \"afB10gGysmmVfVRlPnduPpuvcdAeDAstmqPC0sYJbRw=\"})), module=<module '_fla_cuda_fe2bb66' from '/srv/kparity-ro/kernels/kernels--kernels-community--fla/snapshots/24d8640db48c804a224b5da987b81093ff7136d1/build/torch-cuda/__init__.py'>, repo_info=RepoInfo(repo_id='kernels-community/fla', revision='24d8640db48c804a224b5da987b81093ff7136d1'))"
+   ]
+  },
+  "dtype": "bfloat16-float32-readout",
+  "batch_size": 1,
+  "max_input_tokens": 32768,
+  "input_length_policy": "reject-overflow-native",
+  "media": "native-ordered-pil-images-v1",
+  "calibration_policy": "released-runtime",
+  "image_preprocessing": "shared-full-image-policy-v1-then-native-processor"
+ },
+ "status": "ok",
+ "log_tail": "  bench_ja 300/1200\n  bench_ja 400/1200\n  bench_ja 500/1200\n  bench_ja 600/1200\n  bench_ja 700/1200\n  bench_ja 800/1200\n  bench_ja 900/1200\n  bench_ja 1000/1200\n  bench_ja 1100/1200\n  bench_ja 1200/1200\nbench_ja: 1200 cases in 115.0s -> /srv/kparity/runs/kparity-d3-nano-k-20261109T181356/bench_ja.jsonl\nResults: /srv/kparity/runs/kparity-d3-nano-k-20261109T181356/s1mb/kparity-d3-nano-k-20261109T181356",
+ "s1mb": {
+  "jamc-qa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 112.91699561000132
+  },
+  "jculture-mcq-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 283,
+    "expected": 283,
+    "succeeded": 283,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 33.2700751989978
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 36.547989107999456
+  },
+  "mmmlu-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 34.395556432999
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 34.826821015998576
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 35.0084835259986
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 35.42340448599862
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 36.23992275600176
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 33.25984097499895
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 36.21660671000063
+  },
+  "jmteb-retrieval": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 67.04521994100287
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 35.66413008900054
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 32.93200663300013
+  },
+  "jsem-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 37.495803295998485
+  },
+  "gpqa-ja-main-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 36.82117236200065
+  },
+  "jmmlu-japan-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 33.59958319699945
+  },
+  "sobaco-culture-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 35.249596707999444
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  }
+ },
+ "work_dir": "/srv/kparity/runs/kparity-d3-nano-k-20261109T181356"
+}

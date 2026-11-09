@@ -1,0 +1,667 @@
+{
+ "run_id": "d3-lite-full-20261107T231202",
+ "benchmarks": {
+  "commonsensemoralja-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 22.697051198920235
+  },
+  "jamc-qa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 22.32636539801024
+  },
+  "janli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 285,
+    "expected": 285,
+    "succeeded": 285,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 20.976305989082903
+  },
+  "jcommonsenseqa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 22.16818594210781
+  },
+  "jculture-mcq-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 283,
+    "expected": 283,
+    "succeeded": 283,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.05550571787171
+  },
+  "jnli-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 23.25621130783111
+  },
+  "kuci-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 31.88719288702123
+  },
+  "mintaka-ja-boolean-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 36.91056931694038
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 45.06039139907807
+  },
+  "mmmlu-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 34.043981689959764
+  },
+  "jsick-sts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 41.147373374784365
+  },
+  "jsts-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 43.54900556220673
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 38.65593036892824
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 37.110145308077335
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 42.2795405080542
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 43.356039851903915
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 40.6552215248812
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 46.249816986965016
+  },
+  "jmteb-retrieval": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 78.63593381107785
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 36.539075416047126
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 38.278526173206046
+  },
+  "jcola-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 299,
+    "expected": 299,
+    "succeeded": 299,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 37.473323779180646
+  },
+  "jamp-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 37.42437558597885
+  },
+  "jsem-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 39.326778921997175
+  },
+  "gpqa-ja-main-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 45.15988492104225
+  },
+  "jmmlu-japan-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 38.27389210299589
+  },
+  "sobaco-culture-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 38.10772793297656
+  }
+ },
+ "model": {
+  "training_exposure": null,
+  "id": "vllm-sr/d3-lite",
+  "adapter": "d3",
+  "revision": "6c01fba14e74f63b70e1ef442b0b6d1b934339d5",
+  "settings": {
+   "device": "cuda:0",
+   "cuda_visible_devices": "0",
+   "source_python_sha256": "9114cfd34df648cfba22c346d9c0a94cc4ea02a065b4e33d4a1a161a5781e89c",
+   "renderer": "native-structured-anonymous-numeric-score-v1",
+   "questions_per_call": 1,
+   "versions": {
+    "torch": "2.10.0+cu130",
+    "transformers": "5.17.0"
+   },
+   "cuda_shards": 1,
+   "hub_kernels": false,
+   "hub_kernels_note": "disabled by decision-eval bridge (--no-hub-kernels); transformers built-in ops",
+   "dtype": "bfloat16-float32-readout",
+   "batch_size": 1,
+   "max_input_tokens": 32768,
+   "input_length_policy": "reject-overflow-native",
+   "media": "native-ordered-pil-images-v1",
+   "calibration_policy": "released-runtime",
+   "image_preprocessing": "shared-full-image-policy-v1-then-native-processor"
+  },
+  "total_params": 853247040,
+  "active_params": 597197888,
+  "parameter_count_method": "embedding_excluded_parameters_v1"
+ },
+ "evaluator_version": "0.1.0",
+ "environment": {
+  "python": "3.12.16",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "evaluator_source_sha256": "065d3c92fb7839f87f86c15ff034610cf8ccb59c8000772e01b109006dbcde82",
+  "evaluator_revision": "dbfc74699b814cadc8e3384ffa8705a39958cc91",
+  "dataset_source": {
+   "repo_id": "hotchpotch/S1MB-japanese-v1",
+   "revision": "eea80b7d5d388389d257f034aeadf06c9996c57d"
+  },
+  "image_preprocessing": {
+   "jdmb:commonsensemoralja:test:18": [],
+   "jdmb:commonsensemoralja:test:27": [],
+   "jdmb:commonsensemoralja:test:29": [],
+   "jdmb:commonsensemoralja:test:30": [],
+   "jdmb:commonsensemoralja:test:31": [],
+   "jdmb:commonsensemoralja:test:48": [],
+   "jdmb:commonsensemoralja:test:73": [],
+   "jdmb:commonsensemoralja:test:74": [],
+   "jdmb:commonsensemoralja:test:88": [],
+   "jdmb:commonsensemoralja:test:106": [],
+   "jdmb:commonsensemoralja:test:113": [],
+   "jdmb:commonsensemoralja:test:120": [],
+   "jdmb:commonsensemoralja:test:126": [],
+   "jdmb:commonsensemoralja:test:128": [],
+   "jdmb:commonsensemoralja:test:130": [],
+   "jdmb:commonsensemoralja:test:137": [],
+   "jdmb:commonsensemoralja:test:138": [],
+   "jdmb:commonsensemoralja:test:211": [],
+   "jdmb:commonsensemoralja:test:236": [],
+   "jdmb:commonsensemoralja:test:247": [],
+   "jdmb:commonsensemoralja:test:266": [],
+   "jdmb:commonsensemoralja:test:270": [],
+   "jdmb:commonsensemoralja:test:283": [],
+   "jdmb:commonsensemoralja:test:288": [],
+   "jdmb:commonsensemoralja:test:293": [],
+   "jdmb:commonsensemoralja:test:299": [],
+   "jdmb:commonsensemoralja:test:304": [],
+   "jdmb:commonsensemoralja:test:313": [],
+   "jdmb:commonsensemoralja:test:329": [],
+   "jdmb:commonsensemoralja:test:357": [],
+   "jdmb:commonsensemoralja:test:371": [],
+   "jdmb:commonsensemoralja:test:372": [],
+   "jdmb:commonsensemoralja:test:378": [],
+   "jdmb:commonsensemoralja:test:379": [],
+   "jdmb:commonsensemoralja:test:389": [],
+   "jdmb:commonsensemoralja:test:432": [],
+   "jdmb:commonsensemoralja:test:446": [],
+   "jdmb:commonsensemoralja:test:460": [],
+   "jdmb:commonsensemoralja:test:489": [],
+   "jdmb:commonsensemoralja:test:494": [],
+   "jdmb:commonsensemoralja:test:516": [],
+   "jdmb:commonsensemoralja:test:532": [],
+   "jdmb:commonsensemoralja:test:557": [],
+   "jdmb:commonsensemoralja:test:582": [],
+   "jdmb:commonsensemoralja:test:583": [],
+   "jdmb:commonsensemoralja:test:585": [],
+   "jdmb:commonsensemoralja:test:590": [],
+   "jdmb:commonsensemoralja:test:614": [],
+   "jdmb:commonsensemoralja:test:617": [],
+   "jdmb:commonsensemoralja:test:621": [],
+   "jdmb:commonsensemoralja:test:626": [],
+   "jdmb:commonsensemoralja:test:636": [],
+   "jdmb:commonsensemoralja:test:648": [],
+   "jdmb:commonsensemoralja:test:715": [],
+   "jdmb:commonsensemoralja:test:717": [],
+   "jdmb:commonsensemoralja:test:724": [],
+   "jdmb:commonsensemoralja:test:743": [],
+   "jdmb:commonsensemoralja:test:747": [],
+   "jdmb:commonsensemoralja:test:780": [],
+   "jdmb:commonsensemoralja:test:793": [],
+   "jdmb:commonsensemoralja:test:794": [],
+   "jdmb:commonsensemoralja:test:814": [],
+   "jdmb:commonsensemoralja:test:840": [],
+   "jdmb:commonsensemoralja:test:850": [],
+   "jdmb:commonsensemoralja:test:898": [],
+   "jdmb:commonsensemoralja:test:900": [],
+   "jdmb:commonsensemoralja:test:974": [],
+   "jdmb:commonsensemoralja:test:1001": [],
+   "jdmb:commonsensemoralja:test:1002": [],
+   "jdmb:commonsensemoralja:test:1014": [],
+   "jdmb:commonsensemoralja:test:1022": [],
+   "jdmb:commonsensemoralja:test:1031": [],
+   "jdmb:commonsensemoralja:test:1050": [],
+   "jdmb:commonsensemoralja:test:1058": [],
+   "jdmb:commonsensemoralja:test:1071": [],
+   "jdmb:commonsensemoralja:test:1072": [],
+   "jdmb:commonsensemoralja:test:1080": [],
+   "jdmb:commonsensemoralja:test:1122": [],
+   "jdmb:commonsensemoralja:test:1132": [],
+   "jdmb:commonsensemoralja:test:1135": [],
+   "jdmb:commonsensemoralja:test:1137": [],
+   "jdmb:commonsensemoralja:test:1139": [],
+   "jdmb:commonsensemoralja:test:1154": [],
+   "jdmb:commonsensemoralja:test:1159": [],
+   "jdmb:commonsensemoralja:test:1183": [],
+   "jdmb:commonsensemoralja:test:1194": [],
+   "jdmb:commonsensemoralja:test:1202": [],
+   "jdmb:commonsensemoralja:test:1210": [],
+   "jdmb:commonsensemoralja:test:1231": [],
+   "jdmb:commonsensemoralja:test:1256": [],
+   "jdmb:commonsensemoralja:test:1262": [],
+   "jdmb:commonsensemoralja:test:1263": [],
+   "jdmb:commonsensemoralja:test:1299": [],
+   "jdmb:commonsensemoralja:test:1309": [],
+   "jdmb:commonsensemoralja:test:1320": [],
+   "jdmb:commonsensemoralja:test:1326": [],
+   "jdmb:commonsensemoralja:test:1328": [],
+   "jdmb:commonsensemoralja:test:1330": [],
+   "jdmb:commonsensemoralja:test:1335": [],
+   "jdmb:commonsensemoralja:test:1346": [],
+   "jdmb:commonsensemoralja:test:1356": [],
+   "jdmb:commonsensemoralja:test:1357": [],
+   "jdmb:commonsensemoralja:test:1358": [],
+   "jdmb:commonsensemoralja:test:1364": [],
+   "jdmb:commonsensemoralja:test:1367": [],
+   "jdmb:commonsensemoralja:test:1379": [],
+   "jdmb:commonsensemoralja:test:1382": [],
+   "jdmb:commonsensemoralja:test:1390": [],
+   "jdmb:commonsensemoralja:test:1396": [],
+   "jdmb:commonsensemoralja:test:1403": [],
+   "jdmb:commonsensemoralja:test:1424": [],
+   "jdmb:commonsensemoralja:test:1426": [],
+   "jdmb:commonsensemoralja:test:1436": [],
+   "jdmb:commonsensemoralja:test:1464": [],
+   "jdmb:commonsensemoralja:test:1495": [],
+   "jdmb:commonsensemoralja:test:1505": [],
+   "jdmb:commonsensemoralja:test:1515": [],
+   "jdmb:commonsensemoralja:test:1543": [],
+   "jdmb:commonsensemoralja:test:1555": [],
+   "jdmb:commonsensemoralja:test:1560": [],
+   "jdmb:commonsensemoralja:test:1566": [],
+   "jdmb:commonsensemoralja:test:1573": [],
+   "jdmb:commonsensemoralja:test:1644": [],
+   "jdmb:commonsensemoralja:test:1651": [],
+   "jdmb:commonsensemoralja:test:1662": [],
+   "jdmb:commonsensemoralja:test:1693": [],
+   "jdmb:commonsensemoralja:test:1699": [],
+   "jdmb:commonsensemoralja:test:1747": [],
+   "jdmb:commonsensemoralja:test:1748": [],
+   "jdmb:commonsensemoralja:test:1755": [],
+   "jdmb:commonsensemoralja:test:1756": [],
+   "jdmb:commonsensemoralja:test:1759": [],
+   "jdmb:commonsensemoralja:test:1774": [],
+   "jdmb:commonsensemoralja:test:1778": [],
+   "jdmb:commonsensemoralja:test:1798": [],
+   "jdmb:commonsensemoralja:test:1805": [],
+   "jdmb:commonsensemoralja:test:1814": [],
+   "jdmb:commonsensemoralja:test:1821": [],
+   "jdmb:commonsensemoralja:test:1824": [],
+   "jdmb:commonsensemoralja:test:1840": [],
+   "jdmb:commonsensemoralja:test:1843": [],
+   "jdmb:commonsensemoralja:test:1869": [],
+   "jdmb:commonsensemoralja:test:1892": [],
+   "jdmb:commonsensemoralja:test:1903": [],
+   "jdmb:commonsensemoralja:test:1919": [],
+   "jdmb:commonsensemoralja:test:1920": [],
+   "jdmb:commonsensemoralja:test:1929": [],
+   "jdmb:commonsensemoralja:test:1930": [],
+   "jdmb:commonsensemoralja:test:1933": [],
+   "jdmb:commonsensemoralja:test:1938": [],
+   "jdmb:commonsensemoralja:test:1975": [],
+   "jdmb:commonsensemoralja:test:1981": [],
+   "jdmb:commonsensemoralja:test:1995": [],
+   "jdmb:commonsensemoralja:test:2001": [],
+   "jdmb:commonsensemoralja:test:2007": [],
+   "jdmb:commonsensemoralja:test:2008": [],
+   "jdmb:commonsensemoralja:test:2027": [],
+   "jdmb:commonsensemoralja:test:2036": [],
+   "jdmb:commonsensemoralja:test:2037": [],
+   "jdmb:commonsensemoralja:test:2039": [],
+   "jdmb:commonsensemoralja:test:2040": [],
+   "jdmb:commonsensemoralja:test:2064": [],
+   "jdmb:commonsensemoralja:test:2083": [],
+   "jdmb:commonsensemoralja:test:2148": [],
+   "jdmb:commonsensemoralja:test:2149": [],
+   "jdmb:commonsensemoralja:test:2182": [],
+   "jdmb:commonsensemoralja:test:2183": [],
+   "jdmb:commonsensemoralja:test:2189": [],
+   "jdmb:commonsensemoralja:test:2220": [],
+   "jdmb:commonsensemoralja:test:2223": [],
+   "jdmb:commonsensemoralja:test:2231": [],
+   "jdmb:commonsensemoralja:test:2244": [],
+   "jdmb:commonsensemoralja:test:2252": [],
+   "jdmb:commonsensemoralja:test:2268": [],
+   "jdmb:commonsensemoralja:test:2275": [],
+   "jdmb:commonsensemoralja:test:2277": [],
+   "jdmb:commonsensemoralja:test:2297": [],
+   "jdmb:commonsensemoralja:test:2306": [],
+   "jdmb:commonsensemoralja:test:2309": [],
+   "jdmb:commonsensemoralja:test:2317": [],
+   "jdmb:commonsensemoralja:test:2342": [],
+   "jdmb:commonsensemoralja:test:2357": [],
+   "jdmb:commonsensemoralja:test:2365": [],
+   "jdmb:commonsensemoralja:test:2395": [],
+   "jdmb:commonsensemoralja:test:2401": [],
+   "jdmb:commonsensemoralja:test:2402": [],
+   "jdmb:commonsensemoralja:test:2421": [],
+   "jdmb:commonsensemoralja:test:2423": [],
+   "jdmb:commonsensemoralja:test:2436": [],
+   "jdmb:commonsensemoralja:test:2452": [],
+   "jdmb:commonsensemoralja:test:2454": [],
+   "jdmb:commonsensemoralja:test:2458": [],
+   "jdmb:commonsensemoralja:test:2476": [],
+   "jdmb:commonsensemoralja:test:2489": [],
+   "jdmb:commonsensemoralja:test:2505": [],
+   "jdmb:commonsensemoralja:test:2553": [],
+   "jdmb:commonsensemoralja:test:2577": [],
+   "jdmb:commonsensemoralja:test:2579": [],
+   "jdmb:commonsensemoralja:test:2589": [],
+   "jdmb:commonsensemoralja:test:2601": [],
+   "jdmb:commonsensemoralja:test:2605": [],
+   "jdmb:commonsensemoralja:test:2630": [],
+   "jdmb:commonsensemoralja:test:2638": [],
+   "jdmb:commonsensemoralja:test:2661": [],
+   "jdmb:commonsensemoralja:test:2736": [],
+   "jdmb:commonsensemoralja:test:2750": [],
+   "jdmb:commonsensemoralja:test:2752": [],
+   "jdmb:commonsensemoralja:test:2767": [],
+   "jdmb:commonsensemoralja:test:2774": [],
+   "jdmb:commonsensemoralja:test:2782": [],
+   "jdmb:commonsensemoralja:test:2792": [],
+   "jdmb:commonsensemoralja:test:2826": [],
+   "jdmb:commonsensemoralja:test:2833": [],
+   "jdmb:commonsensemoralja:test:2848": [],
+   "jdmb:commonsensemoralja:test:2854": [],
+   "jdmb:commonsensemoralja:test:2872": [],
+   "jdmb:commonsensemoralja:test:2873": [],
+   "jdmb:commonsensemoralja:test:2875": [],
+   "jdmb:commonsensemoralja:test:2877": [],
+   "jdmb:commonsensemoralja:test:2881": [],
+   "jdmb:commonsensemoralja:test:2882": [],
+   "jdmb:commonsensemoralja:test:2892": [],
+   "jdmb:commonsensemoralja:test:2910": [],
+   "jdmb:commonsensemoralja:test:2916": [],
+   "jdmb:commonsensemoralja:test:2929": [],
+   "jdmb:commonsensemoralja:test:2933": [],
+   "jdmb:commonsensemoralja:test:2935": [],
+   "jdmb:commonsensemoralja:test:2939": [],
+   "jdmb:commonsensemoralja:test:2950": [],
+   "jdmb:commonsensemoralja:test:2993": [],
+   "jdmb:commonsensemoralja:test:2996": [],
+   "jdmb:commonsensemoralja:test:2999": [],
+   "jdmb:commonsensemoralja:test:3016": [],
+   "jdmb:commonsensemoralja:test:3033": [],
+   "jdmb:commonsensemoralja:test:3050": [],
+   "jdmb:commonsensemoralja:test:3052": [],
+   "jdmb:commonsensemoralja:test:3081": [],
+   "jdmb:commonsensemoralja:test:3083": [],
+   "jdmb:commonsensemoralja:test:3141": [],
+   "jdmb:commonsensemoralja:test:3152": [],
+   "jdmb:commonsensemoralja:test:3159": [],
+   "jdmb:commonsensemoralja:test:3161": [],
+   "jdmb:commonsensemoralja:test:3162": [],
+   "jdmb:commonsensemoralja:test:3163": [],
+   "jdmb:commonsensemoralja:test:3191": [],
+   "jdmb:commonsensemoralja:test:3196": [],
+   "jdmb:commonsensemoralja:test:3222": [],
+   "jdmb:commonsensemoralja:test:3227": [],
+   "jdmb:commonsensemoralja:test:3245": [],
+   "jdmb:commonsensemoralja:test:3247": [],
+   "jdmb:commonsensemoralja:test:3249": [],
+   "jdmb:commonsensemoralja:test:3260": [],
+   "jdmb:commonsensemoralja:test:3287": [],
+   "jdmb:commonsensemoralja:test:3301": [],
+   "jdmb:commonsensemoralja:test:3343": [],
+   "jdmb:commonsensemoralja:test:3347": [],
+   "jdmb:commonsensemoralja:test:3357": [],
+   "jdmb:commonsensemoralja:test:3360": [],
+   "jdmb:commonsensemoralja:test:3458": [],
+   "jdmb:commonsensemoralja:test:3466": [],
+   "jdmb:commonsensemoralja:test:3468": [],
+   "jdmb:commonsensemoralja:test:3489": [],
+   "jdmb:commonsensemoralja:test:3501": [],
+   "jdmb:commonsensemoralja:test:3503": [],
+   "jdmb:commonsensemoralja:test:3511": [],
+   "jdmb:commonsensemoralja:test:3520": [],
+   "jdmb:commonsensemoralja:test:3554": [],
+   "jdmb:commonsensemoralja:test:3558": [],
+   "jdmb:commonsensemoralja:test:3574": [],
+   "jdmb:commonsensemoralja:test:3589": [],
+   "jdmb:commonsensemoralja:test:3605": [],
+   "jdmb:commonsensemoralja:test:3607": [],
+   "jdmb:commonsensemoralja:test:3608": [],
+   "jdmb:commonsensemoralja:test:3613": [],
+   "jdmb:commonsensemoralja:test:3634": [],
+   "jdmb:commonsensemoralja:test:3662": [],
+   "jdmb:commonsensemoralja:test:3667": [],
+   "jdmb:commonsensemoralja:test:3678": [],
+   "jdmb:commonsensemoralja:test:3700": [],
+   "jdmb:commonsensemoralja:test:3721": [],
+   "jdmb:commonsensemoralja:test:3747": [],
+   "jdmb:commonsensemoralja:test:3752": [],
+   "jdmb:commonsensemoralja:test:3770": [],
+   "jdmb:commonsensemoralja:test:3772": [],
+   "jdmb:commonsensemoralja:test:3789": [],
+   "jdmb:commonsensemoralja:test:3798": [],
+   "jdmb:commonsensemoralja:test:3804": [],
+   "jdmb:commonsensemoralja:test:3846": [],
+   "jdmb:commonsensemoralja:test:3853": [],
+   "jdmb:commonsensemoralja:test:3859": [],
+   "jdmb:commonsensemoralja:test:3868": [],
+   "jdmb:commonsensemoralja:test:3887": [],
+   "jdmb:commonsensemoralja:test:3893": [],
+   "jdmb:commonsensemoralja:test:3912": [],
+   "jdmb:commonsensemoralja:test:3939": [],
+   "jdmb:commonsensemoralja:test:3951": [],
+   "jdmb:commonsensemoralja:test:3960": [],
+   "jdmb:commonsensemoralja:test:3966": [],
+   "jdmb:commonsensemoralja:test:3982": [],
+   "jdmb:commonsensemoralja:test:3985": []
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "recorded_at": "2026-11-09T12:38:42+00:00",
+ "user": "kparity",
+ "uid": 999,
+ "work_dir": "/srv/kparity",
+ "kernels_dir": "/srv/kparity-ro/kernels",
+ "s1mb_data": {
+  "source": "third_party/S1MB/evaluator/data",
+  "copy": "/srv/kparity/s1mb_ro/data",
+  "sha256_tree_source": "1c6fa8072a142e21525be699ccf9454bc3be032ac68dc675206a1a6bb9ce314a",
+  "sha256_tree_copy": "1c6fa8072a142e21525be699ccf9454bc3be032ac68dc675206a1a6bb9ce314a",
+  "identical": true
+ },
+ "checks": {
+  "gpu": {
+   "returncode": 0,
+   "expected": "成功",
+   "as_expected": true,
+   "stdout": "True NVIDIA RTX PRO 6000 Blackwell Workstation Edition (12, 0)"
+  },
+  "id": {
+   "returncode": 0,
+   "expected": "成功",
+   "as_expected": true,
+   "stdout": "uid=999(kparity) gid=999(kparity) groups=999(kparity)"
+  },
+  "caps": {
+   "returncode": 0,
+   "expected": "成功",
+   "as_expected": true,
+   "stdout": "CapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nNoNewPrivs:\t1"
+  },
+  "env_names": {
+   "returncode": 0,
+   "expected": "成功",
+   "as_expected": true,
+   "stdout": "CUDA_VISIBLE_DEVICES HF_HOME HF_HUB_CACHE HF_HUB_DISABLE_TELEMETRY HF_HUB_OFFLINE HF_MODULES_CACHE HOME KERNELS_CACHE LANG PATH PWD PYTHONDONTWRITEBYTECODE PYTHONUNBUFFERED TMPDIR TOKENIZERS_PARALLELISM TORCHINDUCTOR_CACHE_DIR TRANSFORMERS_OFFLINE XDG_CACHE_HOME"
+  },
+  "read_root_home": {
+   "returncode": 2,
+   "expected": "失敗",
+   "as_expected": true,
+   "stdout": ""
+  },
+  "read_gh_hosts": {
+   "returncode": 1,
+   "expected": "失敗",
+   "as_expected": true,
+   "stdout": ""
+  },
+  "write_repo": {
+   "returncode": 1,
+   "expected": "失敗",
+   "as_expected": true,
+   "stdout": ""
+  },
+  "write_hf_cache": {
+   "returncode": 1,
+   "expected": "失敗",
+   "as_expected": true,
+   "stdout": ""
+  },
+  "write_kernels_ro": {
+   "returncode": 1,
+   "expected": "失敗",
+   "as_expected": true,
+   "stdout": ""
+  },
+  "write_s1mb_data_copy": {
+   "returncode": 1,
+   "expected": "失敗",
+   "as_expected": true,
+   "stdout": ""
+  },
+  "write_work": {
+   "returncode": 0,
+   "expected": "成功",
+   "as_expected": true,
+   "stdout": ""
+  }
+ },
+ "all_as_expected": true
+}

@@ -1,0 +1,112 @@
+# trust_remote_code / 同梱カスタムコードのレビュー所見（指示書 §2）。
+# 対象：results/manifest.json に固定した各モデルリビジョンの *.py。
+# 方法：全 .py をパターン検索（src/code_review.py の PATTERNS）し、該当箇所と推論経路の import 連鎖を読んだ。
+# 判定：approved = 本評価の推論経路にネットワーク送信・シェル実行がないことを確認。
+#       実行時は事前ダウンロード済みのローカルスナップショットを使い HF_HUB_OFFLINE=1 で起動する。
+reviewed_at: "2026-11-07"
+models:
+  saihai-v1-310m:
+    verdict: approved
+    entry: modeling_bekko.BekkoModel -> inference_v0.BekkoInference
+    findings:
+      - "ネットワーク送信・subprocess・eval/exec・pickle/torch.load なし"
+      - "write_text は save/エクスポート用関数内のみ（読み込み・推論経路では呼ばれない）"
+      - "importlib は flash_attn の任意 import のみ（未導入なら SDPA）"
+  saihai-v1-8b:
+    verdict: approved
+    entry: saihai.model.TorchDecisionModel（S1MB 公式アダプタ adapters/saihai.py の経路）
+    findings:
+      - "固定リビジョンを c8aa3bbb015471496dbec3a7db2fef86581bd3cf に変更（S1MB OPEN_MODELS.md が指定する版）。当初固定した main 907eb3b2 には公式アダプタが import する saihai/ パッケージが無く ModuleNotFoundError になった。model.safetensors（sha256 245ee6e6…）・tokenizer.json・training-provenance.json は両リビジョンで同一、違いはコードと config.json"
+      - "推論経路 saihai/__init__.py → saihai/model.py（TorchDecisionModel：AutoConfig / LlamaForCausalLM.from_pretrained(ローカル)、tokenizers.Tokenizer.from_file、LM head の候補行を読む）→ saihai/inference.py の DecisionInterface.render / systemone。ネットワーク送信・subprocess・eval/exec なし"
+      - "saihai/inference.py の urlopen は LlamaDecisionClient（llama.cpp サーバ用）だけで、transformers バックエンドでは使わない。snapshot_download はローカルディレクトリでない場合だけ"
+      - "server.py（urlopen）・training.py（subprocess、hf_hub_download）・convert_gguf.py は推論経路から import されない"
+      - "旧固定 907eb3b2 の inference_saihai.py / llmjp4_*.py も確認済み（ネットワーク送信・subprocess・eval/exec なし）"
+  julia-1:
+    verdict: approved
+    entry: julia.inference.TransformerEngine（S1MB 公式アダプタの経路。router は使わない）
+    findings:
+      - "julia/router/build.py に subprocess（bend/clang でのネイティブビルド）があるが、推論経路からは import されない"
+      - "julia/router/native.py の ctypes は Bend の CPU バックエンド用。TransformerEngine 経路では読み込まれない"
+      - "scripts/reproduce_typed.py の urllib は評価データ取得用スクリプトで、実行しない"
+      - "内部の from_pretrained は trust_remote_code=False"
+  d3-nano:
+    verdict: approved
+    entry: d3_runtime.D3（S1MB 公式アダプタの経路）
+    findings:
+      - "d3_runtime._download（urllib）は入力に http(s) の画像・動画 URL がある場合のみ。本評価はテキストのみで呼ばれない"
+      - "snapshot_download / hf_hub_download は Hub からのモデルファイル取得のみ。ローカルディレクトリ指定なら呼ばれない"
+      - "d3_server.py は HTTP サーバだが、推論経路から import されない（起動しない）"
+      - "tempfile は動画デコード時のみ"
+      - "d3-mini と全 .py がバイト一致"
+  d3-mini:
+    verdict: approved
+    entry: d3_runtime.D3
+    findings:
+      - "d3-nano と全 .py がバイト一致（所見は d3-nano と同じ）"
+  clef-flash:
+    verdict: approved
+    entry: joint_schema_model.load_clef
+    findings:
+      - "import は torch / json / math / dataclasses のみ"
+      - "snapshot_download はローカルパスでない場合のみ。ローカルスナップショットを渡す"
+  h2o-lightning-4b:
+    verdict: pending
+    findings:
+      - "h2o_lightning_shim.py は vLLM の前に立つ HTTP サーバ（http.server, http.client, socket）。画像 URL 取得機能あり（LIGHTNING_IMAGE_URLS=off で無効化可）"
+      - "card_common.py（テスト用）に subprocess.Popen(bash) と urllib がある。実行しない"
+      - "評価方法（vLLM one-way）の実装時に、使う経路を再レビューする"
+  strands-decider-2b:
+    verdict: approved
+    package: {name: strands-decider, version: 0.3.0, wheel_sha256: b5817ffb469127f611ca375f9c6342ec232aac27267405dcba19d0c2b7a100b1,
+              source: "https://pypi.org/project/strands-decider/0.3.0/ (モデルカードの pip install strands-decider)", license: Apache-2.0}
+    findings:
+      - "HF リポジトリに .py なし（LoRA + readout head の重みのみ）。推論コードは PyPI の strands-decider==0.3.0（wheel を data/remote_code/strands/ に展開して読んだ。2026-11-05 公開の最新版で、モデル側に対応するコード版の記載はない：provenance.json の code_commit は <redacted>）"
+      - "推論経路：infer.load_engine → modeling.StrandsDeciderModel.load（ローカルディレクトリなら snapshot_download しない）→ AutoTokenizer/AutoConfig/Qwen3_5ForCausalLM.from_pretrained(base_model, revision=provenance.json の base_model_revision) → PeftModel.from_pretrained(lora/) → head.safetensors。torch.load は旧形式のフォールバックのみで weights_only=True"
+      - "推論経路（__init__, infer, modeling, prompting, schema, cpu_kernels）に socket・urllib・requests・httpx・subprocess・os.system・eval/exec は無い。HTTP サーバ（server.py, uvicorn/fastapi）・cli.py・vision.py・mlx_engine.py は import しない"
+      - "基盤 Qwen/Qwen3.5-2B-Base は provenance.json の b1485b2fa6dfa1287294f269f5fb618e03d52d7c で読む（transformers 本体の実装、remote code なし）"
+  sokudan-ja-310m:
+    verdict: approved
+    package: {name: sokudan, version: 0.3.0, source: "third_party/sokudan @ eccded37532d8a9afe5d6715ab62231a24366e65 (GitHub hiroki-abe-58/sokudan)", license: Apache-2.0}
+    findings:
+      - "HF リポジトリに .py なし（safetensors と設定のみ）。推論コードは固定コミットの sokudan パッケージ（PyPI ではなく third_party の固定 checkout を --no-deps で導入）"
+      - "推論経路：sokudan.load → predict.locate_checkpoint（ローカルディレクトリなら Hub に行かない）→ backends.torch_backend.read_checkpoint（ディレクトリは safetensors.load_file。torch.load(weights_only=False) は .pt ファイル指定時のみで、本評価では通らない）→ model.backbone（AutoModel.from_pretrained(config.backbone)）→ load_state_dict(strict)"
+      - "推論経路（sokudan/predict.py, backends/torch_backend.py, model/*, encoding/*, schema/*, calibration/temperature.py）に socket・urllib・requests・httpx・subprocess・os.system・eval/exec は無い。httpx を使う sokudan/data/local_llm.py と sokudan/serve は学習データ生成・サーバ用で推論経路から import されない"
+      - "基盤モデル sbintuitions/modernbert-ja-310m を revision 指定なしで読む（ModernBERT は transformers 本体の実装で remote code なし）。main を一度取得して SHA を manifest.models.sokudan-ja-310m.dependencies に固定し、HF_HUB_OFFLINE=1 で実行"
+  laya-multilingual:
+    verdict: approved
+    package: {name: laya, version: 0.3.20, wheel_sha256: 6039e802fa5effb8dd492061cd7ad39a43087beadc4a4fa4a649614e77eb83d4,
+              source: "https://pypi.org/project/laya/0.3.20/", license: Apache-2.0}
+    findings:
+      - "HF リポジトリに .py なし。推論は PyPI の laya==0.3.20（S1MB の laya extra の固定版。wheel を data/remote_code/laya-0.3.20/ に展開して読んだ）"
+      - "推論経路：S1MB adapters/laya.py → laya.Agent(ローカルスナップショット) → common.build_model → DecisionModel。import laya が読み込むのは email/hooks/lang/presets/router/structured/agent/common で、socket・urllib・requests・httpx・subprocess・os.system・eval/exec は無い"
+      - "ネットワーク：snapshot_download はパスが存在しない場合だけ（アダプタ側の snapshot_download も HF_HUB_OFFLINE=1 でキャッシュ参照）。encoder/config.json がスナップショットにあるため AutoModel.from_config で構築し、基盤エンコーダを Hub から取得しない"
+      - "ファイル書き込み：_fix_tokenizer_config がスナップショット内の tokenizer/tokenizer_config.json を一時ファイル＋os.replace で書き換えることがある（ローカルのみ。ネットワーク・シェルなし）。キャッシュ内の当該ファイルの変更として記録する"
+      - "ネットワークを使う laya/integrations/langchain.py・laya/mcp・laya/serve.py は推論経路で import されない"
+  d3-lite:
+    verdict: approved
+    entry: d3_runtime.D3（S1MB 公式アダプタの経路。--no-hub-kernels で enable_kernels を無効化）
+    findings:
+      - "全 .py（8ファイル）が d3-nano とバイト一致（sha256 で確認）。所見は d3-nano と同じ"
+  d3-flash:
+    verdict: approved
+    entry: d3_runtime.D3（S1MB 公式アダプタの経路。--no-hub-kernels で enable_kernels を無効化）
+    findings:
+      - "全 .py（8ファイル）が d3-nano とバイト一致（sha256 で確認）。所見は d3-nano と同じ"
+  decision-2.0-nox-4b:
+    verdict: approved
+    entry: "decision2.Decision2.from_pretrained（S1MB 公式アダプタ adapters/decision2.py の経路。--source にスナップショット）"
+    findings:
+      - "Nox-4B と Lux-9B の全 .py（18ファイル）がバイト一致"
+      - "推論経路 decision2/__init__.py → api.py → qwen.py / _vendor/dev2model/*：socket・urllib・requests・httpx・subprocess・os.system・eval/exec は無い"
+      - "snapshot_download は qwen.resolve_base（MODEL_MANIFEST.json の base が null なので呼ばれない。基盤は同梱の backbone/）と modeling_decision2.py（transformers の AutoModel 経路用。公式アダプタは使わない）だけ"
+      - "fast_kernels.py（triton）は ROCm gfx942 用で、公式アダプタは kernels=False・graphs=False・share_context=False で呼ぶため読み込まれない"
+      - "ファイル書き込みは保存用関数（decision_model.save）と一時ディレクトリへのコピー（Hub のシンボリックリンクを避けるため）だけ"
+  decision-2.0-lux-9b:
+    verdict: approved
+    entry: "decision2.Decision2.from_pretrained（S1MB 公式アダプタ adapters/decision2.py の経路。--source にスナップショット）"
+    findings:
+      - "Nox-4B と Lux-9B の全 .py（18ファイル）がバイト一致"
+      - "推論経路 decision2/__init__.py → api.py → qwen.py / _vendor/dev2model/*：socket・urllib・requests・httpx・subprocess・os.system・eval/exec は無い"
+      - "snapshot_download は qwen.resolve_base（MODEL_MANIFEST.json の base が null なので呼ばれない。基盤は同梱の backbone/）と modeling_decision2.py（transformers の AutoModel 経路用。公式アダプタは使わない）だけ"
+      - "fast_kernels.py（triton）は ROCm gfx942 用で、公式アダプタは kernels=False・graphs=False・share_context=False で呼ぶため読み込まれない"
+      - "ファイル書き込みは保存用関数（decision_model.save）と一時ディレクトリへのコピー（Hub のシンボリックリンクを避けるため）だけ"

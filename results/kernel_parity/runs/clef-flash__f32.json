@@ -1,0 +1,308 @@
+{
+ "model": "clef-flash",
+ "cond": "f32",
+ "smoke": false,
+ "run_id": "kparity-clef-flash-f32-20261109T154348",
+ "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+ "started_at": "2026-11-09T15:43:48+00:00",
+ "flags": [
+  "--no-hub-kernels",
+  "--fp32-backbone"
+ ],
+ "env": "kparity-clef",
+ "user": "kparity",
+ "child_env_names": [
+  "CUDA_VISIBLE_DEVICES",
+  "HF_HOME",
+  "HF_HUB_CACHE",
+  "HF_HUB_DISABLE_TELEMETRY",
+  "HF_HUB_OFFLINE",
+  "HF_MODULES_CACHE",
+  "HOME",
+  "KERNELS_CACHE",
+  "LANG",
+  "PATH",
+  "PYTHONDONTWRITEBYTECODE",
+  "PYTHONUNBUFFERED",
+  "TMPDIR",
+  "TOKENIZERS_PARALLELISM",
+  "TORCHINDUCTOR_CACHE_DIR",
+  "TRANSFORMERS_OFFLINE",
+  "TRITON_CACHE_DIR",
+  "XDG_CACHE_HOME"
+ ],
+ "elapsed_seconds": 1983.7,
+ "returncode": 0,
+ "finished_at": "2026-11-09T16:16:51+00:00",
+ "guard": {
+  "blocked": 1,
+  "blocked_events": [
+   {
+    "t": 1794239033.7321117,
+    "pid": 59229,
+    "kind": "blocked",
+    "event": "socket.bind",
+    "detail": "(('::1', 0),)",
+    "stack": [
+     "<frozen importlib._bootstrap_external>:999 exec_module",
+     "<frozen importlib._bootstrap>:488 _call_with_frames_removed",
+     "/workspace/decision-eval/envs/kparity-clef/.venv/lib/python3.12/site-packages/urllib3/util/__init__.py:4 <module>",
+     "<frozen importlib._bootstrap>:1360 _find_and_load",
+     "<frozen importlib._bootstrap>:1331 _find_and_load_unlocked",
+     "<frozen importlib._bootstrap>:935 _load_unlocked",
+     "<frozen importlib._bootstrap_external>:999 exec_module",
+     "<frozen importlib._bootstrap>:488 _call_with_frames_removed",
+     "/workspace/decision-eval/envs/kparity-clef/.venv/lib/python3.12/site-packages/urllib3/util/connection.py:137 <module>",
+     "/workspace/decision-eval/envs/kparity-clef/.venv/lib/python3.12/site-packages/urllib3/util/connection.py:127 _has_ipv6"
+    ]
+   }
+  ],
+  "processes": {
+   "uname": 1,
+   "git": 17
+  },
+  "unix_socket_connects": 0
+ },
+ "triton_cache": {
+  "exists": false,
+  "cubin_files": 0,
+  "kernel_names": []
+ },
+ "adapter_settings": {
+  "device": "cuda:0",
+  "cuda_visible_devices": "0",
+  "source_python_sha256": "1b7b50dc08d5e8d8bf6989cc7cc1eb8811efb22892572ec5f530b37356798a3a",
+  "renderer": "native-anonymous-ids-numeric-score-v1",
+  "questions_per_call": "all-case-questions",
+  "versions": {
+   "torch": "2.10.0+cu130",
+   "transformers": "5.17.0"
+  },
+  "dtype": "bfloat16",
+  "attention_implementation": "sdpa",
+  "max_input_tokens": 32768,
+  "input_length_policy": "reject-overflow",
+  "case_batch_size": 1,
+  "source_revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+  "media": "native-ordered-pil-images-v1",
+  "image_preprocessing": "shared-full-image-policy-v1-then-native-processor",
+  "dtype_override": "float32: bf16 で読み込んだ後に変換（decision-eval bridge --fp32-backbone）。バックボーン重みは BF16 で保存されているので、値は fp32 で読み込んだ場合と同じ",
+  "fp32_cast_target": "ClefModel",
+  "hub_kernels": false,
+  "hub_kernels_note": "disabled by decision-eval bridge (--no-hub-kernels); transformers built-in ops"
+ },
+ "status": "ok",
+ "log_tail": "  bench_ja 300/1200\n  bench_ja 400/1200\n  bench_ja 500/1200\n  bench_ja 600/1200\n  bench_ja 700/1200\n  bench_ja 800/1200\n  bench_ja 900/1200\n  bench_ja 1000/1200\n  bench_ja 1100/1200\n  bench_ja 1200/1200\nbench_ja: 1200 cases in 270.8s -> /srv/kparity/runs/kparity-clef-flash-f32-20261109T154348/bench_ja.jsonl\nResults: /srv/kparity/runs/kparity-clef-flash-f32-20261109T154348/s1mb/kparity-clef-flash-f32-20261109T154348",
+ "s1mb": {
+  "jamc-qa-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 59.163580987002206
+  },
+  "jculture-mcq-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 283,
+    "expected": 283,
+    "succeeded": 283,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 67.0859722310015
+  },
+  "mmlu-prox-ja-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 100.95442787299908
+  },
+  "mmmlu-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 73.03438817600181
+  },
+  "generalization-japanese-knowledge-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 55.810945811997954
+  },
+  "generalization-japanese-knowledge-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 53.68450376000328
+  },
+  "generalization-japanese-knowledge-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 108.65599389199997
+  },
+  "generalization-japanese-math-formal-hard-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 128.2969737409985
+  },
+  "generalization-japanese-math-formal-hard-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 119.13808169700133
+  },
+  "generalization-japanese-math-formal-hard-score": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 161.73414563500046
+  },
+  "jmteb-retrieval": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 333.8718893740006
+  },
+  "generalization-japanese-diverse-noul": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 51.562316231000295
+  },
+  "generalization-japanese-diverse-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 53.87230672900114
+  },
+  "jsem-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 72.36701457199888
+  },
+  "gpqa-ja-main-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 80.0986184909998
+  },
+  "jmmlu-japan-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 54.87983816200358
+  },
+  "sobaco-culture-choice": {
+   "status": "complete",
+   "counts": {
+    "cases": 300,
+    "expected": 300,
+    "succeeded": 300,
+    "failed": 0,
+    "abstained": 0
+   },
+   "elapsed_seconds": 52.82623848300136
+  }
+ },
+ "bench_ja": {
+  "bench_ja-department": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-urgency": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  },
+  "bench_ja-churn-para1": {
+   "n": 300,
+   "failed": 0,
+   "expected": 300
+  }
+ },
+ "work_dir": "/srv/kparity/runs/kparity-clef-flash-f32-20261109T154348"
+}

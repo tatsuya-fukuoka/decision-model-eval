@@ -1,0 +1,166 @@
+{
+ "computed_at": "2026-11-09T20:08:08+00:00",
+ "kernel_scope": "fla のみ適用（activation は未適用）。公式構成（activation を含む）との一致は未確認",
+ "thresholds": {
+  "s1": 0.005,
+  "s2": 0.01,
+  "s3": 0.005
+ },
+ "c4_factor": 2.0,
+ "criteria_doc": "docs/kernel_parity_criteria.md",
+ "models": {
+  "d3-nano": {
+   "verdict": "一致と書けない（基準を満たさない）",
+   "failed_criteria": [
+    "s1mb: 基準1",
+    "s1mb: 基準2",
+    "s1mb: 基準4",
+    "bench_ja: 基準2",
+    "bench_ja: 基準4"
+   ],
+   "checks": {
+    "s1mb": {
+     "基準1": false,
+     "基準2": false,
+     "基準3": true,
+     "基準4": false,
+     "基準5": true
+    },
+    "bench_ja": {
+     "基準1": true,
+     "基準2": false,
+     "基準3": true,
+     "基準4": false,
+     "基準5": true
+    }
+   },
+   "status": {
+    "nk1": "ok",
+    "nk2": "ok",
+    "k": "ok",
+    "f32": "ok"
+   }
+  },
+  "d3-mini": {
+   "verdict": "一致と書けない（基準を満たさない）",
+   "failed_criteria": [
+    "s1mb: 基準1",
+    "s1mb: 基準2",
+    "bench_ja: 基準4"
+   ],
+   "checks": {
+    "s1mb": {
+     "基準1": false,
+     "基準2": false,
+     "基準3": true,
+     "基準4": true,
+     "基準5": true
+    },
+    "bench_ja": {
+     "基準1": true,
+     "基準2": true,
+     "基準3": true,
+     "基準4": false,
+     "基準5": true
+    }
+   },
+   "status": {
+    "nk1": "ok",
+    "nk2": "ok",
+    "k": "ok",
+    "f32": "ok"
+   }
+  },
+  "clef-flash": {
+   "verdict": "一致と書けない（基準を満たさない）",
+   "failed_criteria": [
+    "s1mb: 基準1",
+    "s1mb: 基準2",
+    "bench_ja: 基準2",
+    "bench_ja: 基準4"
+   ],
+   "checks": {
+    "s1mb": {
+     "基準1": false,
+     "基準2": false,
+     "基準3": true,
+     "基準4": true,
+     "基準5": true
+    },
+    "bench_ja": {
+     "基準1": true,
+     "基準2": false,
+     "基準3": true,
+     "基準4": false,
+     "基準5": true
+    }
+   },
+   "status": {
+    "nk1": "ok",
+    "nk2": "ok",
+    "k": "ok",
+    "f32": "ok"
+   }
+  },
+  "d3-lite": {
+   "verdict": "一致と書けない（基準を満たさない）",
+   "failed_criteria": [
+    "s1mb: 基準1",
+    "s1mb: 基準2",
+    "bench_ja: 基準2"
+   ],
+   "checks": {
+    "s1mb": {
+     "基準1": false,
+     "基準2": false,
+     "基準3": true,
+     "基準4": true,
+     "基準5": true
+    },
+    "bench_ja": {
+     "基準1": true,
+     "基準2": false,
+     "基準3": true,
+     "基準4": true,
+     "基準5": true
+    }
+   },
+   "status": {
+    "nk1": "ok",
+    "nk2": "ok",
+    "k": "ok",
+    "f32": "ok"
+   }
+  },
+  "d3-flash": {
+   "verdict": "一致と書けない（基準を満たさない）",
+   "failed_criteria": [
+    "s1mb: 基準1",
+    "s1mb: 基準2",
+    "bench_ja: 基準2"
+   ],
+   "checks": {
+    "s1mb": {
+     "基準1": false,
+     "基準2": false,
+     "基準3": true,
+     "基準4": true,
+     "基準5": true
+    },
+    "bench_ja": {
+     "基準1": true,
+     "基準2": false,
+     "基準3": true,
+     "基準4": true,
+     "基準5": true
+    }
+   },
+   "status": {
+    "nk1": "ok",
+    "nk2": "ok",
+    "k": "ok",
+    "f32": "ok"
+   }
+  }
+ }
+}

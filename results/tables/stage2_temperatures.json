@@ -1,0 +1,982 @@
+{
+ "baseline-majority": {
+  "noul": {
+   "temperature": 1.3824196353988922,
+   "nll_before": 0.6929419822541051,
+   "nll_after": 0.6929068934356772,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 0.8784019561268394,
+   "nll_before": 1.4075597106264814,
+   "nll_after": 1.4073930909161638,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 19.999992350890576,
+   "nll_before": 1.3540251005511001,
+   "nll_after": 1.3540251005511001,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "baseline-random": {
+  "noul": {
+   "temperature": 19.999992350890576,
+   "nll_before": 0.6931471805599467,
+   "nll_after": 0.6931471805599467,
+   "n": 362,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 19.999992350890576,
+   "nll_before": 1.4279741995463358,
+   "nll_after": 1.4279741995463358,
+   "n": 989,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 19.999992350890576,
+   "nll_before": 1.3540251005511001,
+   "nll_after": 1.3540251005511001,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "clef-flash": {
+  "noul": {
+   "temperature": 1.5905658353554148,
+   "nll_before": 0.5770884098738007,
+   "nll_after": 0.5475622772994065,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.3661382467732754,
+   "nll_before": 0.8864230234780229,
+   "nll_after": 0.8509203233190978,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 1.1085195661477083,
+   "nll_before": 1.0962687032259755,
+   "nll_after": 1.094221584075098,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "d3-flash": {
+  "noul": {
+   "temperature": 1.536940062680342,
+   "nll_before": 0.46845943265112827,
+   "nll_after": 0.44640804442005183,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.4336912253853231,
+   "nll_before": 0.7670053819710618,
+   "nll_after": 0.7346500583403579,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 1.4439594774393278,
+   "nll_before": 1.1109521089703458,
+   "nll_after": 1.0755436767086322,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "d3-lite": {
+  "noul": {
+   "temperature": 2.2481064312440937,
+   "nll_before": 0.6752027093962426,
+   "nll_after": 0.6060528198800748,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.8990731172913293,
+   "nll_before": 1.220188225398727,
+   "nll_after": 1.113736945534622,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 11.84646147643799,
+   "nll_before": 1.5605570689810202,
+   "nll_after": 1.3518414638523726,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "d3-mini": {
+  "noul": {
+   "temperature": 1.7046247255575788,
+   "nll_before": 0.49926986735045625,
+   "nll_after": 0.4646604798436812,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.5450728904317208,
+   "nll_before": 0.8671734042950444,
+   "nll_after": 0.8192383633772891,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 1.3231448756672182,
+   "nll_before": 1.0938871591008885,
+   "nll_after": 1.0766430516020864,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "d3-nano": {
+  "noul": {
+   "temperature": 2.3572308799832697,
+   "nll_before": 0.6587344283761853,
+   "nll_after": 0.5597941328997647,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.755840252139914,
+   "nll_before": 1.0785352395120384,
+   "nll_after": 0.9862935495082216,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 2.1018681441682077,
+   "nll_before": 1.3527160302124424,
+   "nll_after": 1.2970449831208921,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "decision-2.0-lux-9b": {
+  "noul": {
+   "temperature": 2.0146244516810063,
+   "nll_before": 0.6108322859037857,
+   "nll_after": 0.5358476034985687,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.5627874056650628,
+   "nll_before": 0.9308495768674913,
+   "nll_after": 0.8789089449400187,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 0.8770919393834345,
+   "nll_before": 1.0249420634362978,
+   "nll_after": 1.02210717678826,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "decision-2.0-nox-4b": {
+  "noul": {
+   "temperature": 1.784996727777613,
+   "nll_before": 0.5874173160275639,
+   "nll_after": 0.5397842385310984,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.3122803575715782,
+   "nll_before": 0.9238294903709142,
+   "nll_after": 0.9056260583517819,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 0.7896719823611512,
+   "nll_before": 1.0626256690500437,
+   "nll_after": 1.0543749837761387,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "julia-1": {
+  "noul": {
+   "temperature": 16.51199651932465,
+   "nll_before": 1.2866857674762513,
+   "nll_after": 0.6881553024226452,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 11.25689994722363,
+   "nll_before": 3.1411030300914344,
+   "nll_after": 1.3694646206920913,
+   "n": 886,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 368
+  },
+  "score": {
+   "temperature": 19.99999167579142,
+   "nll_before": 2.316310474803715,
+   "nll_after": 1.3568414201747792,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "julia-1__ext": {
+  "noul": {
+   "temperature": 16.51199651932465,
+   "nll_before": 1.2866857674762513,
+   "nll_after": 0.6881553024226452,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 10.72534233851662,
+   "nll_before": 3.060557790805182,
+   "nll_after": 1.3884931223935646,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 19.99999167579142,
+   "nll_before": 2.316310474803715,
+   "nll_after": 1.3568414201747792,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "laya-multilingual": {
+  "noul": {
+   "temperature": 19.999987565001014,
+   "nll_before": 1.1905508033712022,
+   "nll_after": 0.6921913398921076,
+   "n": 360,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 3
+  },
+  "choice": {
+   "temperature": 4.224579570789233,
+   "nll_before": 1.4580308192655107,
+   "nll_after": 1.3417689778640978,
+   "n": 840,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 508
+  },
+  "score": {
+   "temperature": 19.999992080168838,
+   "nll_before": 1.5797207457383005,
+   "nll_after": 1.353994504296483,
+   "n": 179,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 68
+  }
+ },
+ "laya-multilingual__ext": {
+  "noul": {
+   "temperature": 19.999987745466747,
+   "nll_before": 1.1928421980063633,
+   "nll_after": 0.6922042619022489,
+   "n": 362,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 4.398237347705145,
+   "nll_before": 1.5473379375093244,
+   "nll_after": 1.4124690219673035,
+   "n": 982,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 35
+  },
+  "score": {
+   "temperature": 19.999992044903657,
+   "nll_before": 1.580108488023717,
+   "nll_after": 1.355399827133777,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "saihai-v1-310m": {
+  "noul": {
+   "temperature": 4.649484034415411,
+   "nll_before": 0.8914915359398781,
+   "nll_after": 0.6677940906093551,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.745059693687926,
+   "nll_before": 1.18464358326871,
+   "nll_after": 1.1219263507962025,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 2
+  },
+  "score": {
+   "temperature": 10.002232100843974,
+   "nll_before": 1.5121199477998577,
+   "nll_after": 1.352002875429033,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "saihai-v1-310m__ext": {
+  "noul": {
+   "temperature": 4.649484034415411,
+   "nll_before": 0.8914915359398781,
+   "nll_after": 0.6677940906093551,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.745059693687926,
+   "nll_before": 1.18464358326871,
+   "nll_after": 1.1219263507962025,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 10.002232100843974,
+   "nll_before": 1.5121199477998577,
+   "nll_after": 1.352002875429033,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "saihai-v1-8b": {
+  "noul": {
+   "temperature": 1.5317864689094474,
+   "nll_before": 0.5607650790196216,
+   "nll_after": 0.5381084221501188,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.2768427916735123,
+   "nll_before": 0.864030111244311,
+   "nll_after": 0.8492894812936594,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 1.1150601976825685,
+   "nll_before": 1.1655140367737538,
+   "nll_after": 1.1639754608939192,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "sokudan-ja-310m": {
+  "noul": {
+   "temperature": 3.4330007826030964,
+   "nll_before": 0.77920098014758,
+   "nll_after": 0.6707232315099595,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 2.8766780754146826,
+   "nll_before": 1.5475078698392037,
+   "nll_after": 1.3062588287774297,
+   "n": 970,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 90
+  },
+  "score": {
+   "temperature": 19.999985701159524,
+   "nll_before": 1.4731689896625262,
+   "nll_after": 1.3551122719671516,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "sokudan-ja-310m__ext": {
+  "noul": {
+   "temperature": 3.4330007826030964,
+   "nll_before": 0.77920098014758,
+   "nll_after": 0.6707232315099595,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 2.8637557189674556,
+   "nll_before": 1.5466303609408365,
+   "nll_after": 1.3111735211569961,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 19.999985701159524,
+   "nll_before": 1.4731689896625262,
+   "nll_after": 1.3551122719671516,
+   "n": 180,
+   "at_bound": true,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "strands-decider-2b": {
+  "noul": {
+   "temperature": 2.276760629066066,
+   "nll_before": 0.7033819668066746,
+   "nll_after": 0.6386068459089208,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.6470474178014827,
+   "nll_before": 1.2291547805091652,
+   "nll_after": 1.1685737455105059,
+   "n": 982,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 37
+  },
+  "score": {
+   "temperature": 2.6176572441684667,
+   "nll_before": 1.3704368473401314,
+   "nll_after": 1.3430458172777737,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ },
+ "strands-decider-2b__ext": {
+  "noul": {
+   "temperature": 2.276760629066066,
+   "nll_before": 0.7033819668066746,
+   "nll_after": 0.6386068459089208,
+   "n": 362,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-noul",
+    "generalization-japanese-knowledge-hard-noul",
+    "generalization-japanese-math-formal-hard-noul",
+    "jculture-mcq-noul"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "choice": {
+   "temperature": 1.6351287900415248,
+   "nll_before": 1.2274543955434727,
+   "nll_after": 1.1687553598443854,
+   "n": 989,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-diverse-choice",
+    "generalization-japanese-knowledge-hard-choice",
+    "generalization-japanese-math-formal-hard-choice",
+    "gpqa-ja-main-choice",
+    "jamc-qa-choice",
+    "jmmlu-japan-choice",
+    "jmteb-retrieval",
+    "jsem-choice",
+    "mmlu-prox-ja-choice",
+    "mmmlu-choice",
+    "sobaco-culture-choice"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  },
+  "score": {
+   "temperature": 2.6176572441684667,
+   "nll_before": 1.3704368473401314,
+   "nll_after": 1.3430458172777737,
+   "n": 180,
+   "at_bound": false,
+   "fit_tasks": [
+    "generalization-japanese-knowledge-hard-score",
+    "generalization-japanese-math-formal-hard-score"
+   ],
+   "n_excluded_in_fit_tasks": 0
+  }
+ }
+}

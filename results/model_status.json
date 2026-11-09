@@ -1,0 +1,2840 @@
+{
+  "saihai-v1-310m#smoke": {
+    "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+    "run_id": "saihai-v1-310m-smoke-20261107T090752",
+    "smoke": true,
+    "started_at": "2026-11-07T09:07:52+00:00",
+    "log": "results/logs/saihai-v1-310m-smoke-20261107T090752.log",
+    "elapsed_seconds": 76.5,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T09:09:30+00:00"
+  },
+  "saihai-v1-310m": {
+    "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+    "run_id": "saihai-v1-310m-full-20261107T091004",
+    "smoke": false,
+    "started_at": "2026-11-07T09:10:04+00:00",
+    "log": "results/logs/saihai-v1-310m-full-20261107T091004.log",
+    "elapsed_seconds": 844.3,
+    "returncode": 1,
+    "status": "partial",
+    "s1mb_failed_decisions": 2,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete",
+      "partial"
+    ],
+    "reason": "failed jdmb:nanojmteb:jaqket:QA20CAPR-0245: ValueError",
+    "finished_at": "2026-11-07T09:24:27+00:00"
+  },
+  "julia-1#smoke": {
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "run_id": "julia-1-smoke-20261107T101842",
+    "smoke": true,
+    "started_at": "2026-11-07T10:18:42+00:00",
+    "log": "results/logs/julia-1-smoke-20261107T101842.log",
+    "elapsed_seconds": 81.7,
+    "returncode": 1,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 2,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T10:20:44+00:00"
+  },
+  "julia-1": {
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "run_id": "julia-1-full-20261107T102044",
+    "smoke": false,
+    "started_at": "2026-11-07T10:20:44+00:00",
+    "log": "results/logs/julia-1-full-20261107T102044.log",
+    "elapsed_seconds": 408.2,
+    "returncode": 1,
+    "status": "partial",
+    "s1mb_failed_decisions": 369,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete",
+      "partial"
+    ],
+    "reason": "failed jdmb:jamc-qa:test:jamcqa-test-law-00197: ValueError",
+    "finished_at": "2026-11-07T10:28:11+00:00"
+  },
+  "d3-nano#smoke": {
+    "revision": "8198c9f763b046605b2f4827b4999971fa2c92c4",
+    "run_id": "d3-nano-smoke-20261107T121458",
+    "smoke": true,
+    "started_at": "2026-11-07T12:14:58+00:00",
+    "log": "results/logs/d3-nano-smoke-20261107T121458.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 121.5,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T12:17:25+00:00"
+  },
+  "d3-nano": {
+    "revision": "8198c9f763b046605b2f4827b4999971fa2c92c4",
+    "run_id": "d3-nano-full-20261107T121725",
+    "smoke": false,
+    "started_at": "2026-11-07T12:17:25+00:00",
+    "log": "results/logs/d3-nano-full-20261107T121725.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 1184.1,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T12:37:30+00:00"
+  },
+  "d3-mini": {
+    "revision": "df99bf4ca4418bc6908ee68e9b7479af1f3b8800",
+    "run_id": "d3-mini-full-20261107T124329",
+    "smoke": false,
+    "started_at": "2026-11-07T12:43:29+00:00",
+    "log": "results/logs/d3-mini-full-20261107T124329.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 2113.4,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:19:03+00:00"
+  },
+  "clef-flash": {
+    "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+    "run_id": "clef-flash-full-20261107T132816",
+    "smoke": false,
+    "started_at": "2026-11-07T13:28:16+00:00",
+    "log": "results/logs/clef-flash-full-20261107T132816.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 1307.5,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:50:28+00:00"
+  },
+  "saihai-v1-8b#smoke": {
+    "revision": "c8aa3bbb015471496dbec3a7db2fef86581bd3cf",
+    "run_id": "saihai-v1-8b-smoke-20261107T095358",
+    "smoke": true,
+    "started_at": "2026-11-07T09:53:58+00:00",
+    "log": "results/logs/saihai-v1-8b-smoke-20261107T095358.log",
+    "elapsed_seconds": 199.1,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T09:57:41+00:00"
+  },
+  "saihai-v1-8b": {
+    "revision": "c8aa3bbb015471496dbec3a7db2fef86581bd3cf",
+    "run_id": "saihai-v1-8b-full-20261107T095741",
+    "smoke": false,
+    "started_at": "2026-11-07T09:57:41+00:00",
+    "log": "results/logs/saihai-v1-8b-full-20261107T095741.log",
+    "elapsed_seconds": 616.8,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T10:08:21+00:00"
+  },
+  "sokudan-ja-310m#smoke": {
+    "revision": "3e3409b1ed4f3fec9f881d39800a2e7d1b24b184",
+    "run_id": "sokudan-ja-310m-smoke-20261107T100821",
+    "smoke": true,
+    "started_at": "2026-11-07T10:08:21+00:00",
+    "log": "results/logs/sokudan-ja-310m-smoke-20261107T100821.log",
+    "elapsed_seconds": 73.4,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T10:12:02+00:00"
+  },
+  "sokudan-ja-310m": {
+    "revision": "3e3409b1ed4f3fec9f881d39800a2e7d1b24b184",
+    "run_id": "sokudan-ja-310m-full-20261107T101202",
+    "smoke": false,
+    "started_at": "2026-11-07T10:12:02+00:00",
+    "log": "results/logs/sokudan-ja-310m-full-20261107T101202.log",
+    "elapsed_seconds": 375.7,
+    "returncode": 1,
+    "status": "partial",
+    "s1mb_failed_decisions": 90,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete",
+      "partial"
+    ],
+    "reason": "failed jdmb:nanojmteb:ja_gov_faqs:20: QuestionTooLongError",
+    "finished_at": "2026-11-07T10:18:42+00:00"
+  },
+  "laya-multilingual#smoke": {
+    "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+    "run_id": "laya-multilingual-smoke-20261107T110513",
+    "smoke": true,
+    "started_at": "2026-11-07T11:05:13+00:00",
+    "log": "results/logs/laya-multilingual-smoke-20261107T110513.log",
+    "elapsed_seconds": 35.8,
+    "returncode": 1,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 4,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T11:06:25+00:00"
+  },
+  "laya-multilingual": {
+    "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+    "run_id": "laya-multilingual-full-20261107T110625",
+    "smoke": false,
+    "started_at": "2026-11-07T11:06:25+00:00",
+    "log": "results/logs/laya-multilingual-full-20261107T110625.log",
+    "elapsed_seconds": 117.7,
+    "returncode": 1,
+    "status": "partial",
+    "s1mb_failed_decisions": 579,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete",
+      "partial"
+    ],
+    "reason": "batch failed: ValueError; retrying cases",
+    "finished_at": "2026-11-07T11:08:42+00:00"
+  },
+  "strands-decider-2b#smoke": {
+    "revision": "bb282d786bc251fd4e3068de3ada9ddbb38127cd",
+    "run_id": "strands-decider-2b-smoke-20261107T093436",
+    "smoke": true,
+    "started_at": "2026-11-07T09:34:36+00:00",
+    "log": "results/logs/strands-decider-2b-smoke-20261107T093436.log",
+    "elapsed_seconds": 101.2,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T09:37:53+00:00"
+  },
+  "strands-decider-2b": {
+    "revision": "bb282d786bc251fd4e3068de3ada9ddbb38127cd",
+    "run_id": "strands-decider-2b-full-20261107T093753",
+    "smoke": false,
+    "started_at": "2026-11-07T09:37:53+00:00",
+    "log": "results/logs/strands-decider-2b-full-20261107T093753.log",
+    "elapsed_seconds": 1758.6,
+    "returncode": 1,
+    "status": "partial",
+    "s1mb_failed_decisions": 37,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete",
+      "partial"
+    ],
+    "reason": "failed jdmb:nanojmteb:jaqket:QA20CAPR-0359: ValueError",
+    "finished_at": "2026-11-07T10:07:30+00:00"
+  },
+  "saihai-v1-310m__ext#smoke": {
+    "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+    "run_id": "saihai-v1-310m__ext-smoke-20261107T121742",
+    "smoke": true,
+    "started_at": "2026-11-07T12:17:42+00:00",
+    "log": "results/logs/saihai-v1-310m__ext-smoke-20261107T121742.log",
+    "extended": "公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）",
+    "elapsed_seconds": 1339.0,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T12:40:27+00:00"
+  },
+  "d3-mini#smoke": {
+    "revision": "df99bf4ca4418bc6908ee68e9b7479af1f3b8800",
+    "run_id": "d3-mini-smoke-20261107T123730",
+    "smoke": true,
+    "started_at": "2026-11-07T12:37:30+00:00",
+    "log": "results/logs/d3-mini-smoke-20261107T123730.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 335.0,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T12:43:29+00:00"
+  },
+  "saihai-v1-310m__ext": {
+    "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+    "run_id": "saihai-v1-310m__ext-full-20261107T124027",
+    "smoke": false,
+    "started_at": "2026-11-07T12:40:27+00:00",
+    "log": "results/logs/saihai-v1-310m__ext-full-20261107T124027.log",
+    "extended": "公式の --native-adaptive-budget（作者の adaptive-v1：クエリ・候補の説明文を切り詰める。候補数は保持）",
+    "elapsed_seconds": 1011.0,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T12:57:46+00:00"
+  },
+  "sokudan-ja-310m__ext#smoke": {
+    "revision": "3e3409b1ed4f3fec9f881d39800a2e7d1b24b184",
+    "run_id": "sokudan-ja-310m__ext-smoke-20261107T125746",
+    "smoke": true,
+    "started_at": "2026-11-07T12:57:46+00:00",
+    "log": "results/logs/sokudan-ja-310m__ext-smoke-20261107T125746.log",
+    "extended": "joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）",
+    "elapsed_seconds": 83.0,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T12:59:36+00:00"
+  },
+  "sokudan-ja-310m__ext": {
+    "revision": "3e3409b1ed4f3fec9f881d39800a2e7d1b24b184",
+    "run_id": "sokudan-ja-310m__ext-full-20261107T125936",
+    "smoke": false,
+    "started_at": "2026-11-07T12:59:36+00:00",
+    "log": "results/logs/sokudan-ja-310m__ext-full-20261107T125936.log",
+    "extended": "joint 符号化の合計上限 max_state_tokens を 8192 に（作者の既定 1024。8192 は基盤 ModernBERT の max_position_embeddings。状態の切り詰めは作者の規則のまま件数を記録）",
+    "elapsed_seconds": 345.8,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:05:42+00:00"
+  },
+  "strands-decider-2b__ext#smoke": {
+    "revision": "bb282d786bc251fd4e3068de3ada9ddbb38127cd",
+    "run_id": "strands-decider-2b__ext-smoke-20261107T130542",
+    "smoke": true,
+    "started_at": "2026-11-07T13:05:42+00:00",
+    "log": "results/logs/strands-decider-2b__ext-smoke-20261107T130542.log",
+    "extended": "max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）",
+    "elapsed_seconds": 148.9,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:08:31+00:00"
+  },
+  "strands-decider-2b__ext": {
+    "revision": "bb282d786bc251fd4e3068de3ada9ddbb38127cd",
+    "run_id": "strands-decider-2b__ext-full-20261107T130831",
+    "smoke": false,
+    "started_at": "2026-11-07T13:08:31+00:00",
+    "log": "results/logs/strands-decider-2b__ext-full-20261107T130831.log",
+    "extended": "max_length を 32768 に（作者の既定・学習時 4096。切り詰めなし、超過は引き続き失敗）",
+    "elapsed_seconds": 1063.3,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:26:32+00:00"
+  },
+  "clef-flash#smoke": {
+    "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+    "run_id": "clef-flash-smoke-20261107T131903",
+    "smoke": true,
+    "started_at": "2026-11-07T13:19:03+00:00",
+    "log": "results/logs/clef-flash-smoke-20261107T131903.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 230.9,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:28:16+00:00"
+  },
+  "laya-multilingual__ext#smoke": {
+    "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+    "run_id": "laya-multilingual__ext-smoke-20261107T132632",
+    "smoke": true,
+    "started_at": "2026-11-07T13:26:32+00:00",
+    "log": "results/logs/laya-multilingual__ext-smoke-20261107T132632.log",
+    "extended": "--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）",
+    "elapsed_seconds": 195.5,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:30:07+00:00"
+  },
+  "laya-multilingual__ext": {
+    "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+    "run_id": "laya-multilingual__ext-full-20261107T133007",
+    "smoke": false,
+    "started_at": "2026-11-07T13:30:07+00:00",
+    "log": "results/logs/laya-multilingual__ext-full-20261107T133007.log",
+    "extended": "--max-len 8192 --head-max-len 4096（作者の既定 1024 / 256。8192 はエンコーダの max_position_embeddings。切り詰めなし）",
+    "elapsed_seconds": 1300.8,
+    "returncode": 1,
+    "status": "partial",
+    "s1mb_failed_decisions": 35,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete",
+      "partial"
+    ],
+    "reason": "batch failed: ValueError; retrying cases",
+    "finished_at": "2026-11-07T13:52:05+00:00"
+  },
+  "julia-1__ext#smoke": {
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "run_id": "julia-1__ext-smoke-20261107T135205",
+    "smoke": true,
+    "started_at": "2026-11-07T13:52:05+00:00",
+    "log": "results/logs/julia-1__ext-smoke-20261107T135205.log",
+    "extended": "公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）",
+    "elapsed_seconds": 69.9,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T13:54:27+00:00"
+  },
+  "julia-1__ext": {
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "run_id": "julia-1__ext-full-20261107T135427",
+    "smoke": false,
+    "started_at": "2026-11-07T13:54:27+00:00",
+    "log": "results/logs/julia-1__ext-full-20261107T135427.log",
+    "extended": "公式の --native-adaptive-budget（状態・質問・候補の説明文を切り詰める。候補数は保持、20候補超は引き続き失敗）",
+    "elapsed_seconds": 417.4,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T14:01:58+00:00"
+  },
+  "d3-lite#smoke": {
+    "revision": "6c01fba14e74f63b70e1ef442b0b6d1b934339d5",
+    "run_id": "d3-lite-smoke-20261107T230823",
+    "smoke": true,
+    "started_at": "2026-11-07T23:08:23+00:00",
+    "log": "results/logs/d3-lite-smoke-20261107T230823.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 136.8,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T23:12:02+00:00"
+  },
+  "d3-lite": {
+    "revision": "6c01fba14e74f63b70e1ef442b0b6d1b934339d5",
+    "run_id": "d3-lite-full-20261107T231202",
+    "smoke": false,
+    "started_at": "2026-11-07T23:12:02+00:00",
+    "log": "results/logs/d3-lite-full-20261107T231202.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 1190.5,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T23:32:10+00:00"
+  },
+  "decision-2.0-nox-4b#smoke": {
+    "revision": "ae269ecf34a0b3a89026bc1afd9c995279212fad",
+    "run_id": "decision-2.0-nox-4b-smoke-20261107T233210",
+    "smoke": true,
+    "started_at": "2026-11-07T23:32:10+00:00",
+    "log": "results/logs/decision-2.0-nox-4b-smoke-20261107T233210.log",
+    "elapsed_seconds": 503.3,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-07T23:41:01+00:00"
+  },
+  "decision-2.0-nox-4b": {
+    "revision": "ae269ecf34a0b3a89026bc1afd9c995279212fad",
+    "run_id": "decision-2.0-nox-4b-full-20261107T234101",
+    "smoke": false,
+    "started_at": "2026-11-07T23:41:01+00:00",
+    "log": "results/logs/decision-2.0-nox-4b-full-20261107T234101.log",
+    "elapsed_seconds": 2489.2,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-08T00:23:04+00:00"
+  },
+  "d3-flash#smoke": {
+    "revision": "67e03e1bc157961c582ee7c6a35d9b15fada3dec",
+    "run_id": "d3-flash-smoke-20261108T002304",
+    "smoke": true,
+    "started_at": "2026-11-08T00:23:04+00:00",
+    "log": "results/logs/d3-flash-smoke-20261108T002304.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 377.0,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-08T00:29:57+00:00"
+  },
+  "d3-flash": {
+    "revision": "67e03e1bc157961c582ee7c6a35d9b15fada3dec",
+    "run_id": "d3-flash-full-20261108T002957",
+    "smoke": false,
+    "started_at": "2026-11-08T00:29:57+00:00",
+    "log": "results/logs/d3-flash-full-20261108T002957.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 1824.2,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-08T01:00:54+00:00"
+  },
+  "decision-2.0-lux-9b#smoke": {
+    "revision": "1dcd1e7f240eab37ac09a6d0b0f77654b59411f9",
+    "run_id": "decision-2.0-lux-9b-smoke-20261108T010054",
+    "smoke": true,
+    "started_at": "2026-11-08T01:00:54+00:00",
+    "log": "results/logs/decision-2.0-lux-9b-smoke-20261108T010054.log",
+    "elapsed_seconds": 1199.1,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "partial"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-08T01:21:20+00:00"
+  },
+  "decision-2.0-lux-9b": {
+    "revision": "1dcd1e7f240eab37ac09a6d0b0f77654b59411f9",
+    "run_id": "decision-2.0-lux-9b-full-20261108T012121",
+    "smoke": false,
+    "started_at": "2026-11-08T01:21:21+00:00",
+    "log": "results/logs/decision-2.0-lux-9b-full-20261108T012121.log",
+    "elapsed_seconds": 2744.0,
+    "returncode": 0,
+    "status": "ok",
+    "s1mb_failed_decisions": 0,
+    "bench_ja_failed": 0,
+    "benchmark_status": [
+      "complete"
+    ],
+    "reason": null,
+    "finished_at": "2026-11-08T02:08:29+00:00"
+  },
+  "saihai-v1-8b#flip#smoke": {
+    "revision": "c8aa3bbb015471496dbec3a7db2fef86581bd3cf",
+    "run_id": "saihai-v1-8b-flip-smoke-20261108T020834",
+    "smoke": true,
+    "started_at": "2026-11-08T02:08:34+00:00",
+    "log": "results/logs/saihai-v1-8b-flip-smoke-20261108T020834.log",
+    "elapsed_seconds": 209.2,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T02:12:44+00:00"
+  },
+  "saihai-v1-8b#flip": {
+    "revision": "c8aa3bbb015471496dbec3a7db2fef86581bd3cf",
+    "run_id": "saihai-v1-8b-flip-full-20261108T021244",
+    "smoke": false,
+    "started_at": "2026-11-08T02:12:44+00:00",
+    "log": "results/logs/saihai-v1-8b-flip-full-20261108T021244.log",
+    "elapsed_seconds": 1504.2,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T02:38:04+00:00"
+  },
+  "saihai-v1-310m#flip#smoke": {
+    "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+    "run_id": "saihai-v1-310m-flip-smoke-20261108T023804",
+    "smoke": true,
+    "started_at": "2026-11-08T02:38:04+00:00",
+    "log": "results/logs/saihai-v1-310m-flip-smoke-20261108T023804.log",
+    "elapsed_seconds": 124.1,
+    "returncode": 1,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T02:40:26+00:00"
+  },
+  "saihai-v1-310m#flip": {
+    "revision": "704809fa038ff647b1a0e9cda963f1b8a06e0c95",
+    "run_id": "saihai-v1-310m-flip-full-20261108T024026",
+    "smoke": false,
+    "started_at": "2026-11-08T02:40:26+00:00",
+    "log": "results/logs/saihai-v1-310m-flip-full-20261108T024026.log",
+    "elapsed_seconds": 2277.3,
+    "returncode": 1,
+    "status": "partial",
+    "flip_rows": 24285,
+    "flip_failed": 10,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 10
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": "bench_ja failed jmteb-retrieval jdmb:nanojmteb:jaqket:QA20CAPR-0245: ValueError",
+    "finished_at": "2026-11-08T03:18:39+00:00"
+  },
+  "sokudan-ja-310m#flip#smoke": {
+    "revision": "3e3409b1ed4f3fec9f881d39800a2e7d1b24b184",
+    "run_id": "sokudan-ja-310m-flip-smoke-20261108T031839",
+    "smoke": true,
+    "started_at": "2026-11-08T03:18:39+00:00",
+    "log": "results/logs/sokudan-ja-310m-flip-smoke-20261108T031839.log",
+    "elapsed_seconds": 103.4,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T03:20:57+00:00"
+  },
+  "sokudan-ja-310m#flip": {
+    "revision": "3e3409b1ed4f3fec9f881d39800a2e7d1b24b184",
+    "run_id": "sokudan-ja-310m-flip-full-20261108T032057",
+    "smoke": false,
+    "started_at": "2026-11-08T03:20:57+00:00",
+    "log": "results/logs/sokudan-ja-310m-flip-full-20261108T032057.log",
+    "elapsed_seconds": 948.9,
+    "returncode": 0,
+    "status": "partial",
+    "flip_rows": 24285,
+    "flip_failed": 450,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 445
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 5
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": "bench_ja failed jmteb-retrieval jdmb:nanojmteb:ja_gov_faqs:20: QuestionTooLongError",
+    "finished_at": "2026-11-08T03:37:07+00:00"
+  },
+  "strands-decider-2b#flip#smoke": {
+    "revision": "bb282d786bc251fd4e3068de3ada9ddbb38127cd",
+    "run_id": "strands-decider-2b-flip-smoke-20261108T033707",
+    "smoke": true,
+    "started_at": "2026-11-08T03:37:07+00:00",
+    "log": "results/logs/strands-decider-2b-flip-smoke-20261108T033707.log",
+    "elapsed_seconds": 145.3,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T03:39:52+00:00"
+  },
+  "strands-decider-2b#flip": {
+    "revision": "bb282d786bc251fd4e3068de3ada9ddbb38127cd",
+    "run_id": "strands-decider-2b-flip-full-20261108T033952",
+    "smoke": false,
+    "started_at": "2026-11-08T03:39:52+00:00",
+    "log": "results/logs/strands-decider-2b-flip-full-20261108T033952.log",
+    "elapsed_seconds": 4488.0,
+    "returncode": 0,
+    "status": "partial",
+    "flip_rows": 24285,
+    "flip_failed": 185,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 185
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": "bench_ja failed jmteb-retrieval jdmb:nanojmteb:jaqket:QA20CAPR-0359: ValueError",
+    "finished_at": "2026-11-08T04:54:58+00:00"
+  },
+  "julia-1#flip#smoke": {
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "run_id": "julia-1-flip-smoke-20261108T045458",
+    "smoke": true,
+    "started_at": "2026-11-08T04:54:58+00:00",
+    "log": "results/logs/julia-1-flip-smoke-20261108T045458.log",
+    "elapsed_seconds": 70.2,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 10,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 10
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T04:57:29+00:00"
+  },
+  "julia-1#flip": {
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "run_id": "julia-1-flip-full-20261108T045729",
+    "smoke": false,
+    "started_at": "2026-11-08T04:57:29+00:00",
+    "log": "results/logs/julia-1-flip-full-20261108T045729.log",
+    "elapsed_seconds": 942.8,
+    "returncode": 0,
+    "status": "partial",
+    "flip_rows": 24285,
+    "flip_failed": 1845,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 5
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 5
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 80
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 125
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 1500
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 130
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": "bench_ja failed jamc-qa-choice jdmb:jamc-qa:test:jamcqa-test-law-00197: ValueError",
+    "finished_at": "2026-11-08T05:13:36+00:00"
+  },
+  "laya-multilingual#flip#smoke": {
+    "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+    "run_id": "laya-multilingual-flip-smoke-20261108T051336",
+    "smoke": true,
+    "started_at": "2026-11-08T05:13:36+00:00",
+    "log": "results/logs/laya-multilingual-flip-smoke-20261108T051336.log",
+    "elapsed_seconds": 68.9,
+    "returncode": 1,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 10,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 10
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T05:15:03+00:00"
+  },
+  "laya-multilingual#flip": {
+    "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+    "run_id": "laya-multilingual-flip-full-20261108T051503",
+    "smoke": false,
+    "started_at": "2026-11-08T05:15:03+00:00",
+    "log": "results/logs/laya-multilingual-flip-full-20261108T051503.log",
+    "elapsed_seconds": 769.2,
+    "returncode": 1,
+    "status": "partial",
+    "flip_rows": 24285,
+    "flip_failed": 2540,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 930
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 25
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 1495
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 90
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": "bench_ja failed mmlu-prox-ja-choice jdmb:mmlu-prox-ja:test:182: ValueError",
+    "finished_at": "2026-11-08T05:28:13+00:00"
+  },
+  "d3-nano#flip#smoke": {
+    "revision": "8198c9f763b046605b2f4827b4999971fa2c92c4",
+    "run_id": "d3-nano-flip-smoke-20261108T052813",
+    "smoke": true,
+    "started_at": "2026-11-08T05:28:13+00:00",
+    "log": "results/logs/d3-nano-flip-smoke-20261108T052813.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 98.1,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T05:30:09+00:00"
+  },
+  "d3-nano#flip": {
+    "revision": "8198c9f763b046605b2f4827b4999971fa2c92c4",
+    "run_id": "d3-nano-flip-full-20261108T053009",
+    "smoke": false,
+    "started_at": "2026-11-08T05:30:09+00:00",
+    "log": "results/logs/d3-nano-flip-full-20261108T053009.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 3068.1,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T06:21:43+00:00"
+  },
+  "d3-mini#flip#smoke": {
+    "revision": "df99bf4ca4418bc6908ee68e9b7479af1f3b8800",
+    "run_id": "d3-mini-flip-smoke-20261108T062143",
+    "smoke": true,
+    "started_at": "2026-11-08T06:21:43+00:00",
+    "log": "results/logs/d3-mini-flip-smoke-20261108T062143.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 167.2,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T06:24:56+00:00"
+  },
+  "d3-mini#flip": {
+    "revision": "df99bf4ca4418bc6908ee68e9b7479af1f3b8800",
+    "run_id": "d3-mini-flip-full-20261108T062456",
+    "smoke": false,
+    "started_at": "2026-11-08T06:24:56+00:00",
+    "log": "results/logs/d3-mini-flip-full-20261108T062456.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 4107.8,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T07:33:46+00:00"
+  },
+  "clef-flash#flip#smoke": {
+    "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+    "run_id": "clef-flash-flip-smoke-20261108T073346",
+    "smoke": true,
+    "started_at": "2026-11-08T07:33:46+00:00",
+    "log": "results/logs/clef-flash-flip-smoke-20261108T073346.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 283.3,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T07:38:58+00:00"
+  },
+  "clef-flash#flip": {
+    "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+    "run_id": "clef-flash-flip-full-20261108T073858",
+    "smoke": false,
+    "started_at": "2026-11-08T07:38:58+00:00",
+    "log": "results/logs/clef-flash-flip-full-20261108T073858.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 4683.8,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T08:57:38+00:00"
+  },
+  "d3-lite#flip#smoke": {
+    "revision": "6c01fba14e74f63b70e1ef442b0b6d1b934339d5",
+    "run_id": "d3-lite-flip-smoke-20261108T085738",
+    "smoke": true,
+    "started_at": "2026-11-08T08:57:38+00:00",
+    "log": "results/logs/d3-lite-flip-smoke-20261108T085738.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 109.2,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T09:00:00+00:00"
+  },
+  "d3-lite#flip": {
+    "revision": "6c01fba14e74f63b70e1ef442b0b6d1b934339d5",
+    "run_id": "d3-lite-flip-full-20261108T090000",
+    "smoke": false,
+    "started_at": "2026-11-08T09:00:00+00:00",
+    "log": "results/logs/d3-lite-flip-full-20261108T090000.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 3287.3,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T09:55:14+00:00"
+  },
+  "decision-2.0-nox-4b#flip#smoke": {
+    "revision": "ae269ecf34a0b3a89026bc1afd9c995279212fad",
+    "run_id": "decision-2.0-nox-4b-flip-smoke-20261108T095514",
+    "smoke": true,
+    "started_at": "2026-11-08T09:55:14+00:00",
+    "log": "results/logs/decision-2.0-nox-4b-flip-smoke-20261108T095514.log",
+    "elapsed_seconds": 466.7,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T10:03:20+00:00"
+  },
+  "decision-2.0-nox-4b#flip": {
+    "revision": "ae269ecf34a0b3a89026bc1afd9c995279212fad",
+    "run_id": "decision-2.0-nox-4b-flip-full-20261108T100321",
+    "smoke": false,
+    "started_at": "2026-11-08T10:03:21+00:00",
+    "log": "results/logs/decision-2.0-nox-4b-flip-full-20261108T100321.log",
+    "elapsed_seconds": 5848.5,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T11:41:24+00:00"
+  },
+  "d3-flash#flip#smoke": {
+    "revision": "67e03e1bc157961c582ee7c6a35d9b15fada3dec",
+    "run_id": "d3-flash-flip-smoke-20261108T114124",
+    "smoke": true,
+    "started_at": "2026-11-08T11:41:24+00:00",
+    "log": "results/logs/d3-flash-flip-smoke-20261108T114124.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 348.4,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T11:47:46+00:00"
+  },
+  "h2o-lightning-4b": {
+    "status": "skipped",
+    "hf_id": "h2oai/h2o-lightning-4b",
+    "reason": "ユーザー判断（2026-11-08）によりスキップ。他タスクを優先。作者推奨の two-way 読み出しは作者の vLLM ビルドが必要で、標準 vLLM 0.30.0 での one-way アダプタ（自作）と作者の読み出しとの一致確認に工数がかかるため。未実行（ロード・推論とも行っていない）。",
+    "recorded_at": "2026-11-08T11:52:52+00:00"
+  },
+  "d3-flash#flip": {
+    "revision": "67e03e1bc157961c582ee7c6a35d9b15fada3dec",
+    "run_id": "d3-flash-flip-full-20261108T114746",
+    "smoke": false,
+    "started_at": "2026-11-08T11:47:46+00:00",
+    "log": "results/logs/d3-flash-flip-full-20261108T114746.log",
+    "reference": "参考値（公式カーネル未使用）：公式アダプタの enable_kernels を無効化し transformers 本体の実装で推論（ユーザー判断 2026-11-07, 選択肢 b）",
+    "elapsed_seconds": 4528.9,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T13:03:54+00:00"
+  },
+  "decision-2.0-lux-9b#flip#smoke": {
+    "revision": "1dcd1e7f240eab37ac09a6d0b0f77654b59411f9",
+    "run_id": "decision-2.0-lux-9b-flip-smoke-20261108T130354",
+    "smoke": true,
+    "started_at": "2026-11-08T13:03:54+00:00",
+    "log": "results/logs/decision-2.0-lux-9b-flip-smoke-20261108T130354.log",
+    "elapsed_seconds": 775.1,
+    "returncode": 0,
+    "status": "smoke_ok",
+    "flip_rows": 170,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 10,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 10,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 10,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T13:17:15+00:00"
+  },
+  "decision-2.0-lux-9b#flip": {
+    "revision": "1dcd1e7f240eab37ac09a6d0b0f77654b59411f9",
+    "run_id": "decision-2.0-lux-9b-flip-full-20261108T131715",
+    "smoke": false,
+    "started_at": "2026-11-08T13:17:15+00:00",
+    "log": "results/logs/decision-2.0-lux-9b-flip-full-20261108T131715.log",
+    "elapsed_seconds": 5530.0,
+    "returncode": 0,
+    "status": "ok",
+    "flip_rows": 24285,
+    "flip_failed": 0,
+    "flip_tasks": {
+      "jamc-qa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "janli-choice": {
+        "n": 285,
+        "failed": 0
+      },
+      "jcommonsenseqa-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jnli-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "kuci-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmlu-prox-ja-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "mmmlu-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-knowledge-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-math-formal-hard-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmteb-retrieval": {
+        "n": 1500,
+        "failed": 0
+      },
+      "generalization-japanese-diverse-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jamp-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jsem-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "gpqa-ja-main-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "jmmlu-japan-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "sobaco-culture-choice": {
+        "n": 1500,
+        "failed": 0
+      },
+      "bench_ja-department": {
+        "n": 1500,
+        "failed": 0
+      }
+    },
+    "reason": null,
+    "finished_at": "2026-11-08T14:50:07+00:00"
+  }
+}

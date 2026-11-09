@@ -1,0 +1,11 @@
+# 外部リポジトリ（コミットSHAで固定）。scripts/setup_third_party.sh が取得する。
+s1mb:
+  url: https://github.com/hotchpotch/S1MB.git
+  commit: dbfc74699b814cadc8e3384ffa8705a39958cc91
+  license: MIT
+  role: S1MB公式評価器（データ読み込み・公式アダプタ・primary metric）
+sokudan:
+  url: https://github.com/hiroki-abe-58/sokudan.git
+  commit: eccded37532d8a9afe5d6715ab62231a24366e65
+  license: "Apache-2.0（コード） / bench_ja は CC BY 4.0"
+  role: bench_ja の取得と設問定義・評価指標の参照元
